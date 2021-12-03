@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <%- include("src/components/footer/footer.ejs") %>
+    <header class = 'container'>
+    <div class="header-nav">
+        <%- include("progetGeneral/src/components/header/header-nav.ejs") %>
+    </div>
+    <div class="header-menu">
+        <%- include("progetGeneral/src/components/header/header-menu.ejs") %>
+    </div>
+    <div class="carousel-header">
+        <%- include("progetGeneral/src/components/header/header-carousel.ejs") %>
+    </div>
+    </header>
+    <section class="hero-section container">
+        <%- include("progetGeneral/src/components/hero-section/hero-section.ejs") %>
+    </section>
+    <div class="slider">
+        <%- include("progetGeneral/src/components/hero-section/hero-section-slider.ejs") %>
+        <%- include("progetGeneral/src/components/hero-section/hero-section-photo-list.ejs") %>
+    </div>
 </body>
 </html>

@@ -6,57 +6,66 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="/progetGeneral/public/css/style.css">
 </head>
 
 <body>
-	<section class="fashion-blog-container">
-	<div class="title">
-		<span class="title__text">Fashion blog</span>
-		<a href="#"><button class="title__btn">View blog</button></a>
-	</div>
-	<div class="main">
-		<div class="main__blog-one">
-			<a class="blog-one__img" href="#"> <img src="/public/img/image-one.png" alt=""> </a>
-			<div class="blog-one__title blog-title">Bag Trends for Summer 2020</div>
-			<div class="blog-one__links links">
-				<a href="#">Fashion</a>
-				<span class="divider">|</span>
-				<a href="#">August 24,2020</a>
-				<span class="divider">|</span>
-				<img class="icon-comment" src="/public/img/icons/Vector.png"></img>
-				<a href="#">No comments</a>
-			</div>
-
-			<div class="blog-one_text blog-text">Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus.
-				Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis...</div>
+	<section class="container">
+		<div class="title">
+			<h2 class="title__text">Fashion blog</h2>
+			<a href="#">
+				<button class="title__btn">View blog</button>
+			</a>
 		</div>
-		<div class="main__blog-two">
-			<a class="blog-two__img" href="#"> <img src="/public/img/image-two.png" alt=""> </a>
-			<div class="blog-two__title blog-title">Top 10 of This Season’s Hottest Sneakers</div>
-			<div class="blog-two__links links">
-				<a href="#">Lifestyle</a>
-				<span class="divider">|</span>
-				<a href="#">July 16, 2020</a>
-				<span class="divider">|</span>
-				<img class="icon-comment" src="/public/img/icons/Vector.png"></img>
-				<a href="#">4 comments</a>
+		<div class="wrapper">
+			<div class="card">
+				<a href="#">
+					<img src="/progetGeneral/src/img/card-left.jpg" alt="" class="card__image"></a>
+				<div><a href="#" class="card__title">Bag Trends for Summer 2020</a></div>
+				<ul class="card__navy">
+					<li><a href="#" class="card__navy-link">Fashion</a></li>
+					<li class="card__navy-link">|</li>
+					<li> <a href="#" class="card__navy-link">August 24, 2020</a></li>
+					<li class="card__navy-link last-diviver">|</li>
+					<li class="card__navy-link">
+						<a href="#" class="card__navy-link"><img src="/progetGeneral/src/img/icons/Vector.svg" alt=""
+								class="comment-icon">No comments</a>
+					</li>
+				</ul>
+				<div class="card__navy-text">Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt
+					aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis...
+				</div>
 			</div>
-			<div class="blog-two_text blog-text">Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus
-				placerat vitae scelerisque. Rhoncus augue faucibus maecenas lacus...</div>
-		</div>
+			<div class="card">
+				<img src="/progetGeneral/src/img/icons/cursor.svg" alt="" class="cursor">
+				<a href="#">
+					<img src="/progetGeneral/src/img/card-right.jpg" alt="" class="card__image"></a>
+				<div><a href="#" class="card__title card__title-color">Top 10 of This Season’s Hottest Sneakers</a></div>
+				<ul class="card__navy">
+					<li><a href="#" class="card__navy-link">Lifestyle</a></li>
+					<li class="card__navy-link">|</li>
+					<li> <a href="#" class="card__navy-link">July 16, 2020</a></li>
+					<li class="card__navy-link last-diviver">|</li>
+					<li class="card__navy-link">
+						<a href="#" class="card__navy-link"><img src="/progetGeneral/src/img/icons/Vector.svg" alt=""
+								class="comment-icon">4 comments</a>
+					</li>
+				</ul>
+				<div class="card__navy-text">Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus placerat
+					vitae scelerisque. Rhoncus augue faucibus maecenas lacus...
+				</div>
 
-	</div>
-	<img class="cursor" src="/public/img/icons/cursor.png" alt="">
-	<div class="brand-logo">
-		<a href="#"> <img src="/public/img/icons/logo-one.png" alt=""></a>
-		<a href="#"> <img src="/public/img/icons/logo-two.png" alt=""></a>
-		<a href="#"> <img src="/public/img/icons/logo-three.png" alt=""></a>
-		<a href="#"> <img src="/public/img/icons/logo-four.png" alt=""></a>
-		<a href="#"> <img src="/public/img/icons/logo-five.png" alt=""></a>
-		<a href="#"> <img src="/public/img/icons/logo-six.png" alt=""></a>
-	</div>
-</section>
+			</div>
+		</div>
+		<div class="brand-logo">
+			<a href="#"><img src="/progetGeneral/src/img/icons/logo-one.svg" alt=""></a>
+			<a href="#"><img src="/progetGeneral/src/img/icons/logo-two.svg" alt=""></a>
+			<a href="#"><img src="/progetGeneral/src/img/icons/logo-three.svg" alt=""></a>
+			<a href="#"><img src="/progetGeneral/src/img/icons/logo-four.svg" alt=""></a>
+			<a href="#"><img src="/progetGeneral/src/img/icons/logo-five.svg" alt=""></a>
+			<a href="#"><img src="/progetGeneral/src/img/icons/logo-six.svg" alt=""></a>
+		</div>
+	</section>
 </body>
 
 </html>

@@ -1,18 +1,8 @@
-<section class="fb-container">
-	<div class="fb-title">
-		<h2 class="fb-title__text">Fashion blog</h2>
-		<%- include("src/components/fashion-blog/button.ejs") %>
-	</div>
-	<div class="fb-wrapper">
-		<%- include("src/components/fashion-blog/card1.ejs") %>
-			<%- include("src/components/fashion-blog/card2.ejs") %>
-	</div>
-	<div class="fb-brand-logo">
-		<a href="#"><img src="/public/img/logo-one.svg" alt=""></a>
-		<a href="#"><img src="/public/img/logo-two.svg" alt=""></a>
-		<a href="#"><img src="/public/img/logo-three.svg" alt=""></a>
-		<a href="#"><img src="/public/img/logo-four.svg" alt=""></a>
-		<a href="#"><img src="/public/img/logo-five.svg" alt=""></a>
-		<a href="#"><img src="/public/img/logo-six.svg" alt=""></a>
-	</div>
-</section>
+<div class="fashion">
+	<%- include("src/components/fashion-blog/fashion-header.ejs") %>
+		<div class="fashion__row">
+			<%- include("src/components/fashion-blog/card1.ejs") %>
+				<%- include("src/components/fashion-blog/card2.ejs") %>
+		</div>
+		<%- include("src/components/fashion-blog/fashion-brands.ejs") %>
+</div>

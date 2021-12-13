@@ -1,108 +1,154 @@
-a {
-	text-decoration: none;
-}
 ul {
 	list-style-type: none;
 }
-.fb-container {
-	margin-left: 345px;
-	margin-right: 345px;
+a {
+	text-decoration: none;
+}
+.fashion {
 	width: 1230px;
 	height: 602px;
-	align-items: center;
-	margin-bottom: 304px;
+	padding: 0;
+	margin: 0 345px 304px;
 }
-.fb-title {
+.fashion__header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 60px;
 }
-.fb-title__text {
+.fashion__text {
 	color: #1e212c;
+	font-weight: 900;
 	font-size: 46px;
 	line-height: 130%;
+	margin-top: 0;
 }
-.fb-title__btn {
-	width: 130px;
-	height: 44px;
+.fashion__btn {
 	border: 1px solid #17696a;
 	box-sizing: border-box;
 	border-radius: 4px;
-	background-color: #fff;
+	width: 130px;
+	height: 44px;
+	color: #17696a;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 16px;
+	margin-bottom: 60px;
 }
-.fb-title__btn:hover {
-	background-color: #17696a;
+.fashion__btn:hover {
+	background: #17696a;
 	color: #fff;
+	cursor: pointer;
 }
-.fb-wrapper {
+
+.fashion__row {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 }
-.fb-card {
-	width: 600px;
-	height: 482px;
+.fashion__column {
+	min-width: 600px;
 	margin-right: 30px;
-	margin-bottom: 120px;
 	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05),
 		0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
 	border-radius: 4px;
+	margin-bottom: 80px;
 }
-.fb-card-last {
-	margin-right: 0;
+.card-fashion {
+	position: relative;
 }
-.fb-card__image {
-	margin-bottom: 24px;
-}
-.fb-card img {
+.card-fashion__image img {
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
+	border-radius: 4px 4px 0px 0px;
+	margin-bottom: 24px;
 }
-.fb-card img:hover {
+.card-fashion__image img:hover {
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-o-transform: scale(1.1);
+	border-radius: 4px 4px 0px 0px;
+	margin-bottom: 24px;
 }
-.fb-card__title {
+.card-fashion__title {
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 150%;
-	margin-left: 24px;
-	margin-bottom: 12px;
 	color: #1e212c;
+	margin-bottom: 12px;
+	margin-left: 24px;
+	display: inline-block;
 }
-.fb-card__title-color {
+.card-fashion__title:hover {
 	color: #17696a;
 }
-.fb-card__navy {
+.card-fashion__links {
 	display: flex;
-	margin-left: -14px;
-}
-.fb-card__navy-link {
-	color: #787a80;
-	padding-right: 12px;
-}
-.fb-last-diviver {
-	padding-right: 12.9px;
-}
-.fb-comment-icon {
-	padding-right: 8.67px;
-}
-.fb-card__navy-text {
+	align-items: center;
+	margin-bottom: 16px;
 	margin-left: 24px;
-	margin-right: 24px;
+}
+.card-fashion__link {
+	font-size: 14px;
+	line-height: 150%;
+	color: #787a80;
+	margin-right: 12px;
+}
+.card-fashion__link:hover {
+	color: #1e212c;
+}
+.card-fashion__divider {
+	margin-right: 12px;
+}
+.card-fashion__icon {
+	width: 14.43px;
+	height: 12.83px;
+	background-image: url(/public/img/Vector.svg);
+	margin-right: -4px;
+}
+.card-fashion__text {
+	margin-left: 24px;
 	font-size: 16px;
 	line-height: 160%;
 	color: #424551;
+	margin: 0 24px 21px 24px;
 }
-.fb-cursor {
+.card-fashion__pointer {
 	position: absolute;
-	margin-left: 358px;
-	margin-top: 364px;
+	width: 26px;
+	height: 25px;
+	background-image: url(/public/img/cursor.svg);
+	left: 364px;
+	top: 358px;
 }
-.fb-brand-logo {
+.fashion__brands {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 120px;
+}
+.fashion__brands-logo {
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 64px;
+}
+.logo-one {
+	background-image: url(/public/img/logo1.png);
+}
+.logo-two {
+	background-image: url(/public/img/logo2.png);
+}
+.logo-three {
+	background-image: url(/public/img/logo3.png);
+}
+.logo-four {
+	background-image: url(/public/img/logo4.png);
+}
+.logo-five {
+	background-image: url(/public/img/logo5.png);
+}
+.logo-six {
+	background-image: url(/public/img/logo6.png);
 }

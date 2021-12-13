@@ -1,12 +1,6 @@
-<section class="sub-container">
-	<div class="sub-wrapper">
-		<div class="sub-content">
-			<div class="sub-content__title">Subscribe for updates</div>
-			<div class="sub-content__sub-title">Subscribe for exclusive early sale access and new arrivals.</div>
-			<%- include("src/components/Subscribe/checkbox.ejs") %>
-				<%- include("src/components/Subscribe/input.ejs") %>
-		</div>
-		<img src="/public/img/postman.png" alt="" class="sub-image">
+<div class="subscribe">
+	<div class="subscribe__container">
+		<%- include("src/components/Subscribe/subscribe-card.ejs") %>
+			<%- include("src/components/Subscribe/subscribe-image.ejs") %>
 	</div>
-	<%- include("src/components/Subscribe/agree-check.ejs") %>
-</section>
+</div>

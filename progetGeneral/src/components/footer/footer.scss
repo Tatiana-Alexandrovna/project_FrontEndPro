@@ -1,154 +1,142 @@
-footer {
-	margin: 0;
-	padding: 0;
-}
-ul {
-	list-style-type: none;
-}
 a {
 	text-decoration: none;
 }
-.foo-container {
-	background: #1e212c;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer {
 	width: 1920px;
 	height: 358px;
+	background: #1e212c;
+	position: relative;
 }
-.foo-content {
+.footer__container {
+	padding-top: 60px;
+	margin: 0 auto;
+}
+.footer__row {
 	display: flex;
 	justify-content: space-between;
 	margin-left: 345px;
 	margin-right: 345px;
 }
-.foo-content__list-title {
+.footer__item {
+	font-size: 16px;
+	line-height: 160%;
+	color: rgba(255, 255, 255, 0.6);
+	margin-bottom: 4px;
+}
+.footer__list-title {
+	color: #ffffff;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 160%;
-	color: #ffffff;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-bottom: 12px;
-	margin-top: 60px;
+	margin-bottom: 12px;
 }
-.foo-content__list-item {
-	font-size: 16px;
-	line-height: 160%;
-	color: rgba(255, 255, 255, 0.6);
-	padding-bottom: 4px;
-}
-.list-item__tel {
-	font-size: 16px;
-	line-height: 160%;
-	color: #ffffff;
-	color: rgba(255, 255, 255, 0.6);
-}
-.list-item__text {
+.footer__item_white {
 	color: #ffffff;
 }
-
-.foo-content__list-item__social {
+.footer__social {
 	display: flex;
-	justify-content: space-between;
+	margin-bottom: 74px;
 }
-.list-item__social-item {
+.footer__logo {
+	width: 32px;
+	height: 32px;
 	background: rgba(255, 255, 255, 0.12);
+	background-repeat: no-repeat;
+	background-position: center;
 	border-radius: 4px;
-	width: 30px;
-	height: 30px;
 	margin-right: 12px;
 	margin-top: 24px;
-	position: relative;
 }
-.foo-apps {
+.footer__facebook {
+	background-image: url(/public/img/facebook.svg);
+}
+.footer__instagram {
+	background-image: url(/public/img/insta.svg);
+}
+.footer__twitter {
+	background-image: url(/public/img/twitter.svg);
+}
+.footer__youtube {
+	background-image: url(/public/img/YouTube.svg);
+}
+.footer__print {
+	background-image: url(/public/img/print.svg);
+}
+.footer__app {
+	display: flex;
+}
+.footer__logo_size2 {
 	width: 159.87px;
 	height: 45.85px;
-	margin-top: -40px;
+	margin-right: 20px;
+	position: relative;
 }
-.social-item-apple {
+.footer__ios {
 	position: absolute;
-	left: 10%;
+	left: 8%;
 	top: 14%;
 }
-.social-item-apple1 {
+.footer__ios1 {
 	position: absolute;
 	right: 0;
 	top: 0;
 }
-.social-item-apple2 {
+.footer__ioson2 {
 	position: absolute;
-	right: 5%;
+	right: 7%;
 	top: 11%;
 }
-.social-item-android {
+.footer__android {
 	position: absolute;
 	left: 8%;
 	top: 17%;
 }
-.social-item-android1 {
+.footer__android1 {
 	position: absolute;
 	left: 31%;
 	top: 15%;
 }
-.social-item-android2 {
+.footer__android2 {
 	position: absolute;
 	left: 31%;
 	top: 42%;
 }
-.social-item-facebook {
-	position: absolute;
-	left: 36%;
-	top: 24%;
-}
-.social-item-instagram {
-	position: absolute;
-	left: 27%;
-	top: 26%;
-}
-.social-item-twitter {
-	position: absolute;
-	left: 28%;
-	top: 29%;
-}
-.social-item-youtube {
-	position: absolute;
-	left: 23.5%;
-	top: 23%;
-}
-.social-item-p {
-	position: absolute;
-	left: 31%;
-	top: 25%;
-}
-.foo-diviver {
-	display: block;
-	position: relative;
-	width: 1910px;
-	height: 0px;
-	top: 14px;
+.footer__divider {
 	border: 1px solid #ffffff;
+	width: 1920px;
+	height: 0px;
 	opacity: 0.15;
+	margin-bottom: 24px;
 }
-.foo-top-side {
-	position: relative;
+.footer__createdby {
+	margin-left: 345px;
+	display: flex;
 }
-.foo-createdby {
-	position: absolute;
-	width: 287px;
-	height: 18px;
-	left: 393px;
-	top: 45px;
-	color: #fff;
+.footer__info {
+	color: rgba(255, 255, 255, 0.6);
 	font-size: 12px;
 	line-height: 150%;
+	margin-right: 4.41px;
 }
-.foo-createdby__link {
-	color: #fff;
-}
-.foo-createdby__img {
-	padding: 0 4.41px;
-}
-.foo-createdby__go-top {
+.footer__top-link {
 	position: absolute;
-	top: 45px;
-	left: 1508px;
-	color: #ffffffff;
+	right: 345px;
+	bottom: 28px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 160%;
+}
+.footer__heart {
+	margin-right: 4.42px;
+	width: 15.17px;
+	height: 13.33px;
+	background-image: url(/public/img/heart.svg);
 }

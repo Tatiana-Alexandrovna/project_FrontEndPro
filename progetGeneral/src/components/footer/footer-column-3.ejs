@@ -1,37 +1,15 @@
-<div class="foo-content__item">
-	<ul class="foo-content__list">
-		<li class="foo-content__list-title">Get in touch</li>
-		<li class="foo-content__list-item"><span class="list-item__text">Call: </span><a href="tel:4055550128"
-				class="list-item__tel">(405) 555-0128</a>
+<div class="footer__columns">
+	<ul class="footer__list">
+		<li class="footer__item footer__list-title">Get in touch</li>
+		<li class="footer__item"><span class="footer__item_white">Call:</span> <a href="tel:4055550128"
+				class="footer__item">(405)
+				555-0128</a> </li>
+		<li class="footer__item"><span class="footer__item_white">Email:</span> <a href="mailto:hello@createx.com"
+				class="footer__item">hello@createx.com</a>
 		</li>
-		<li class="foo-content__list-item"><span class="list-item__text">Email: </span><a href="mailto:hello@createx.com"
-				class="list-item__tel">hello@createx.com</a>
-		</li>
-		<li class="foo-content__list-item">
-			<div class="foo-content__list-item__social">
-				<a href="#">
-					<div class="list-item__social-item"><img src="/public/img/facebook.svg" alt=""
-							class="social-item-facebook">
-					</div>
-				</a>
-				<a href="#">
-					<div class="list-item__social-item"><img src="/public/img/insta.svg" alt=""
-							class="social-item-instagram"></div>
-				</a>
-				<a href="#">
-					<div class="list-item__social-item"><img src="/public/img/twitter.svg" alt=""
-							class="social-item-twitter"></div>
-				</a>
-				<a href="#">
-					<div class="list-item__social-item"><img src="/public/img/YouTube.svg" alt=""
-							class="social-item-youtube"></div>
-				</a>
-				<a href="#">
-					<div class="list-item__social-item"><img src="/public/img/print.svg" alt="" class="social-item-p">
-					</div>
-				</a>
-			</div>
-		</li>
+		<li class="footer__item">
+			<%- include("src/components/footer/footer-social.ejs") %>
 
+		</li>
 	</ul>
 </div>

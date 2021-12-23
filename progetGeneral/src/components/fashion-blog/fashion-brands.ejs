@@ -1,20 +1,14 @@
 <div class="fashion__brands">
-	<a href="#">
-		<div class="fashion__brands-logo logo-one"></div>
-	</a>
-	<a href="#">
-		<div class="fashion__brands-logo logo-two"></div>
-	</a>
-	<a href="#">
-		<div class="fashion__brands-logo logo-three"></div>
-	</a>
-	<a href="#">
-		<div class="fashion__brands-logo logo-four"></div>
-	</a>
-	<a href="#">
-		<div class="fashion__brands-logo logo-five"></div>
-	</a>
-	<a href="#">
-		<div class="fashion__brands-logo logo-six"></div>
-	</a>
+	<%- include("src/components/fashion-blog/fashion-blog__brands_item.ejs", { background: 'url(/public/img/logo1.png)'
+		}) %>
+		<%- include("src/components/fashion-blog/fashion-blog__brands_item.ejs", {
+			background: 'url(/public/img/logo2.png)' }) %>
+			<%- include("src/components/fashion-blog/fashion-blog__brands_item.ejs", {
+				background: 'url(/public/img/logo3.png)' }) %>
+				<%- include("src/components/fashion-blog/fashion-blog__brands_item.ejs", {
+					background: 'url(/public/img/logo4.png)' }) %>
+					<%- include("src/components/fashion-blog/fashion-blog__brands_item.ejs", {
+						background: 'url(/public/img/logo5.png)' }) %>
+						<%- include("src/components/fashion-blog/fashion-blog__brands_item.ejs", {
+							background: 'url(/public/img/logo6.png)' }) %>
 </div>

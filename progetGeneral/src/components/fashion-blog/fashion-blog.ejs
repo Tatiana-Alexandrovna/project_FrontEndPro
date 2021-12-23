@@ -1,8 +1,16 @@
 <div class="fashion">
 	<%- include("src/components/fashion-blog/fashion-header.ejs") %>
 		<div class="fashion__row">
-			<%- include("src/components/fashion-blog/card1.ejs") %>
-				<%- include("src/components/fashion-blog/card2.ejs") %>
+			<%- include("src/components/fashion-blog/fashion-blog__card.ejs", { image: '/public/img/card-left.jpg' ,
+				title: 'Bag Trends for Summer 2020' , link: 'Fashion' , date: 'August 24, 2020' , comments: 'No comments' ,
+				text: 'Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis...'
+				}) %>
+
+				<%- include("src/components/fashion-blog/fashion-blog__card.ejs", { image: '/public/img/card-right.jpg' ,
+					title: 'Top 10 of This Season’s Hottest Sneakers' , link: 'Lifestyle' , date: 'July 16, 2020' ,
+					comments: '4 comments' ,
+					text: 'Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus placerat vitae scelerisque. Rhoncus augue faucibus maecenas lacus...'
+					}) %>
 		</div>
 		<%- include("src/components/fashion-blog/fashion-brands.ejs") %>
 </div>

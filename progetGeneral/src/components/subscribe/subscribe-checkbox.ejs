@@ -1,6 +1,6 @@
 <div class="subscribe__checkbox">
-	<button class="subscribe__button woman">Women</button>
-	<button class="subscribe__button man">Men</button>
-	<button class="subscribe__button girls">Girls</button>
-	<button class="subscribe__button boys">Boys</button>
+	<%- include("src/components/Subscribe/subscribe-btn.ejs", { title: 'Woman' , className: 'woman' }) %>
+		<%- include("src/components/Subscribe/subscribe-btn.ejs", { title: 'Men' , className: 'man' }) %>
+			<%- include("src/components/Subscribe/subscribe-btn.ejs", { title: 'Girls' , className: 'girls' }) %>
+				<%- include("src/components/Subscribe/subscribe-btn.ejs", { title: 'Boys' , className: 'boys' }) %>
 </div>

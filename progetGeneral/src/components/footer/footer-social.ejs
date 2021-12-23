@@ -1,17 +1,9 @@
 <div class="footer__social">
-	<a href="#">
-		<div class="footer__logo footer__facebook"></div>
-	</a>
-	<a href="#">
-		<div class="footer__logo footer__instagram"></div>
-	</a>
-	<a href="#">
-		<div class="footer__logo footer__twitter"></div>
-	</a>
-	<a href="#">
-		<div class="footer__logo footer__youtube"></div>
-	</a>
-	<a href="#">
-		<div class="footer__logo footer__print"></div>
-	</a>
+	<%- include("src/components/footer/footer__social-item.ejs", { background: 'url(/public/img/facebook.svg)' }) %>
+		<%- include("src/components/footer/footer__social-item.ejs", { background: 'url(/public/img/insta.svg)' }) %>
+			<%- include("src/components/footer/footer__social-item.ejs", { background: 'url(/public/img/twitter.svg)' }) %>
+				<%- include("src/components/footer/footer__social-item.ejs", { background: 'url(/public/img/YouTube.svg)' })
+					%>
+					<%- include("src/components/footer/footer__social-item.ejs", { background: 'url(/public/img/print.svg)'
+						}) %>
 </div>

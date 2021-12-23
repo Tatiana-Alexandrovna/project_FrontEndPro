@@ -28,6 +28,7 @@ a {
   width: 130px;
   height: 44px;
   color: #17696a;
+  background: #ffffff;
   font-weight: bold;
   font-size: 14px;
   line-height: 44px;
@@ -131,24 +132,6 @@ a {
   background-repeat: no-repeat;
   width: 120px;
   height: 64px; }
-
-.logo-one {
-  background-image: url(/public/img/logo1.png); }
-
-.logo-two {
-  background-image: url(/public/img/logo2.png); }
-
-.logo-three {
-  background-image: url(/public/img/logo3.png); }
-
-.logo-four {
-  background-image: url(/public/img/logo4.png); }
-
-.logo-five {
-  background-image: url(/public/img/logo5.png); }
-
-.logo-six {
-  background-image: url(/public/img/logo6.png); }
 
 .subscribe {
   width: 1920px;
@@ -309,21 +292,6 @@ ul {
   border-radius: 4px;
   margin-right: 12px;
   margin-top: 24px; }
-
-.footer__facebook {
-  background-image: url(/public/img/facebook.svg); }
-
-.footer__instagram {
-  background-image: url(/public/img/insta.svg); }
-
-.footer__twitter {
-  background-image: url(/public/img/twitter.svg); }
-
-.footer__youtube {
-  background-image: url(/public/img/YouTube.svg); }
-
-.footer__print {
-  background-image: url(/public/img/print.svg); }
 
 .footer__app {
   display: flex; }

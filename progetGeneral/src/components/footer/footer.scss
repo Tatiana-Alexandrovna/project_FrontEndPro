@@ -1,0 +1,133 @@
+a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer {
+	width: 1920px;
+	height: 358px;
+	background: #1e212c;
+	position: relative;
+}
+.footer__container {
+	padding-top: 60px;
+	margin: 0 auto;
+}
+.footer__row {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 345px;
+	margin-right: 345px;
+}
+.footer__item {
+	font-size: 16px;
+	line-height: 160%;
+	color: rgba(255, 255, 255, 0.6);
+	margin-bottom: 4px;
+}
+.footer__item:hover {
+	color: rgba(255, 255, 255, 1);
+}
+.footer__list-title {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 160%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+.footer__item_white {
+	color: #ffffff;
+}
+.footer__social {
+	display: flex;
+	margin-bottom: 74px;
+}
+.footer__logo {
+	width: 32px;
+	height: 32px;
+	background-color: rgba(255, 255, 255, 0.12);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 4px;
+	margin-right: 12px;
+	margin-top: 24px;
+}
+.footer__logo:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.footer__app {
+	display: flex;
+}
+.footer__logo_size2 {
+	width: 159.87px;
+	height: 45.85px;
+	margin-right: 20px;
+	position: relative;
+}
+.footer__ios {
+	position: absolute;
+	left: 8%;
+	top: 14%;
+}
+.footer__ios1 {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.footer__ioson2 {
+	position: absolute;
+	right: 7%;
+	top: 11%;
+}
+.footer__android {
+	position: absolute;
+	left: 8%;
+	top: 17%;
+}
+.footer__android1 {
+	position: absolute;
+	left: 31%;
+	top: 15%;
+}
+.footer__android2 {
+	position: absolute;
+	left: 31%;
+	top: 42%;
+}
+.footer__divider {
+	border: 1px solid #ffffff;
+	width: 1920px;
+	height: 0px;
+	opacity: 0.15;
+	margin-bottom: 24px;
+}
+.footer__createdby {
+	margin-left: 345px;
+	display: flex;
+}
+.footer__info {
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 12px;
+	line-height: 150%;
+	margin-right: 4.41px;
+}
+.footer__top-link {
+	position: absolute;
+	right: 345px;
+	bottom: 28px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 160%;
+}
+.footer__heart {
+	margin-right: 4.42px;
+	width: 15.17px;
+	height: 13.33px;
+	background-image: url(/progetGeneral/public/img/heart.svg);
+}

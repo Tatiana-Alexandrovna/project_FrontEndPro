@@ -134,4 +134,14 @@ a {
 	background-repeat: no-repeat;
 	width: 120px;
 	height: 64px;
+	filter: grayscale(100%);
+	opacity: 0.5;
+	transition-property: filter, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0ms;
+}
+.fashion__brands-logo:hover {
+	filter: grayscale(0%);
+	opacity: 1;
 }

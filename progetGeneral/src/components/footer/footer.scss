@@ -29,6 +29,9 @@ ul {
 	color: rgba(255, 255, 255, 0.6);
 	margin-bottom: 4px;
 }
+.footer__item:hover {
+	color: rgba(255, 255, 255, 1);
+}
 .footer__list-title {
 	color: #ffffff;
 	font-weight: bold;
@@ -48,14 +51,16 @@ ul {
 .footer__logo {
 	width: 32px;
 	height: 32px;
-	background: rgba(255, 255, 255, 0.12);
+	background-color: rgba(255, 255, 255, 0.12);
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 4px;
 	margin-right: 12px;
 	margin-top: 24px;
 }
-
+.footer__logo:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
 .footer__app {
 	display: flex;
 }

@@ -74,6 +74,24 @@
 	padding-left: 16px;
 	margin-bottom: 24px;
 }
+.subscribe__input:focus:valid {
+	background-color: rgba(3, 206, 164, 0.1);
+	background-image: url(/progetGeneral/src/img/yes.svg);
+	background-size: 17px;
+	background-repeat: no-repeat;
+	background-position-x: 320px;
+	background-position-y: center;
+}
+.subscribe__input:invalid {
+	border: 1px solid red;
+	background-color: rgba(255, 0, 0, 0.1);
+	background-image: url(/progetGeneral/src/img/no.svg);
+	background-size: 17px;
+	background-repeat: no-repeat;
+	background-position-x: 320px;
+	background-position-y: center;
+}
+
 .subscribe__input-button {
 	background: #17696a;
 	border-radius: 0px 4px 4px 0px;
@@ -89,8 +107,6 @@
 .subscribe__input-button:hover {
 	background: #104a4b;
 }
-.subscribe__agree-field {
-}
 .subscribe__info {
 	color: #424551;
 	font-size: 16px;
@@ -102,7 +118,6 @@ input[type="checkbox"] {
 	height: 16px;
 	width: 16px;
 }
-
 .subscribe__image {
 	margin-top: 65px;
 	margin-bottom: 65px;

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class = 'container'>
+        <div class="breadcrumb_women">
+            <a href="/progetGeneral/public/index.html"   class="breadcrumb__home-icon">
+    <img src="/progetGeneral/src/img/home-icon.svg" alt="home-icon">
+</a>
+<img src="/progetGeneral/src/img/right-grey-line.svg" alt="line-right" class="breadcrumb__right">
+<p class="breadcrumb__title">Women</p>
+<img src="/progetGeneral/src/img/right-grey-line.svg" alt="line-right" class="breadcrumb__right">
+<p class="breadcrumb__title-active">Clothes</p>
+        </div>
+        </header>
+        <main>
+            <section class="product-section container">
+            <div class="sidebar">
+                <button class="toolbar__btn white-btn">
+    <img src="/progetGeneral/src/img/filter-icon.svg" alt="">
+    Hide filters
+</button>
+                <div class="sidebar-wrap">
+    <p class="sidebar__title">Clothes</p>
+    <div class="sidebar__search-wrap">
+    <input class="sidebar__filter-search" type="text" placeholder="Search the clothes">
+    <img src="/progetGeneral/src/img/search.svg" alt="" class="sidebar__search-img">
+</div>
+<ul class="sidebar__filter-list">
+    
+        <li class="sidebar__filter-list__item">
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Coats">
+        <label for="Coats" class="form-check-label">
+            <span class="filter-item-text">Coats</span>
+            <span class="filter-item-valye">(16)</span>
+        </label>
+    </div>
+</li>
+    
+        <li class="sidebar__filter-list__item">
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Jackets">
+        <label for="Jackets" class="form-check-label">
+            <span class="filter-item-text">Jackets</span>
+            <span class="filter-item-valye">(12)</span>
+        </label>
+    </div>
+</li>
+    
+        <li class="sidebar__filter-list__item">
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Suits">
+        <label for="Suits" class="form-check-label">
+            <span class="filter-item-text">Suits</span>
+            <span class="filter-item-valye">(5)</span>
+        </label>
+    </div>
+</li>
+    
+        <li class="sidebar__filter-list__item">
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Dresses">
+        <label for="Dresses" class="form-check-label">
+            <span class="filter-item-text">Dresses</span>
+            <span class="filter-item-valye">(11)</span>
+        </label>
+    </div>
+</li>
+    
+        <li class="sidebar__filter-list__item">
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Cardigans & sweaters">
+        <label for="Cardigans & sweaters" class="form-check-label">
+            <span class="filter-item-text">Cardigans & sweaters</span>
+            <span class="filter-item-valye">(18)</span>
+        </label>
+    </div>
+</li>
+    
+        <li class="sidebar__filter-list__item">
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Sweatshirts & hoodies">
+        <label for="Sweatshirts & hoodies" class="form-check-label">
+            <span class="filter-item-text">Sweatshirts & hoodies</span>
+            <span class="filter-item-valye">(21)</span>
+        </label>
+    </div>
+</li>
+     
+</ul>
+</div>
+<ul class="sidebar-filter-list">
+    
+        <li class="sidebar-filter-list__item">
+    <a href="" class="sidebar-filter-list__link">
+        <p class="sidebar-filter-list__title">Size</p>
+        <span class="sidebar-filter-list__plus">+</span>
+    </a>
+</li>
+    
+        <li class="sidebar-filter-list__item">
+    <a href="" class="sidebar-filter-list__link">
+        <p class="sidebar-filter-list__title">Color</p>
+        <span class="sidebar-filter-list__plus">+</span>
+    </a>
+</li>
+    
+        <li class="sidebar-filter-list__item">
+    <a href="" class="sidebar-filter-list__link">
+        <p class="sidebar-filter-list__title">Material</p>
+        <span class="sidebar-filter-list__plus">+</span>
+    </a>
+</li>
+    
+        <li class="sidebar-filter-list__item">
+    <a href="" class="sidebar-filter-list__link">
+        <p class="sidebar-filter-list__title">Brand</p>
+        <span class="sidebar-filter-list__plus">+</span>
+    </a>
+</li>
+    
+        <li class="sidebar-filter-list__item">
+    <a href="" class="sidebar-filter-list__link">
+        <p class="sidebar-filter-list__title">Price</p>
+        <span class="sidebar-filter-list__plus">+</span>
+    </a>
+</li>
+     
+</ul>
+            </div>
+            <div class="products">
+                <div class="toolbar_wrap">
+    <div class="toolbar__wrap-filter">
+<p class="toolbar__title-filter">
+        Sort by
+    </p>
+    <select name="select" class="toolbar__filter"> 
+        <option value="value1" selected>popularity</option>
+        <option value="value2">popularity</option>
+        <option value="value3">popularity</option>
+      </select>
+    </div>
+    <div class="toolbar__wrap-filter">
+    <p class="toolbar__title-filter">
+        Show
+    </p>
+    <input type="number" min="3" max="16" value="12" class="toolbar__filter-value">
+    <p class="toolbar__title-value">
+        products per page
+    </p>
+    </div> 
+    <div class="toolbar__pagination">
+        <ul class="toolbar__pagination-list">
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    1
+                </a>
+            </li>
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    2
+                </a>
+            </li>
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    3
+                </a>
+            </li>
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    ...
+                </a>
+            </li>
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    10
+                </a>
+            </li>
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    <img src="/progetGeneral/src/img/left-line.svg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<ul class="product-list">
+    <li class="product-list_item product_sweater">
+    <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="block">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Shirt with insertion lace trims
+    </p>
+    <p class="product-list_item-price">
+        $49.95
+    </p>
+</div>
+</li> 
+    <li class="product-list_item product_jeans">
+    <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Mid-rise slim cropped fit jeans
+    </p>
+    <p class="product-list_item-price">
+        $40.00
+    </p>
+</div>
+</li> 
+    <li class="product-list_item product_cap">
+    <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="block">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Black and white sport cap
+    </p>
+    <p class="product-list_item-price">
+        $18.15
+    </p>
+</div>
+</li> 
+    <li class="product-list_item product_body">
+    <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="block">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Green baby romper
+    </p>
+    <p class="product-list_item-price">
+        $20.40
+    </p>
+</div>
+</li> 
+    <li class="product-list_item product_coat">
+    <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Check coat with colour contrast
+    </p>
+    <p class="product-list_item-price">
+        $183.45
+    </p>
+</div>
+</li> 
+    <li class="product-list_item product_earrings">
+    <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="block">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Red dangle earrings
+    </p>
+    <p class="product-list_item-price">
+        $29.95
+    </p>
+</div>
+</li> 
+    <li class="product-list_item product_clock">
+    <div class="block">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Chrono watch with blue...
+    </p>
+    <p class="product-list_item-price">
+        $120.60
+    </p>
+</div>
+</li> 
+    <li class="product-list_item product_child_shoes">
+    <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Baby shoes with laces
+    </p>
+    <p class="product-list_item-price">
+        $30.60
+    </p>
+</div>
+</li> 
+    <li class="product-list_item product_sweatshirt">
+    <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="block">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Basic hooded sweatshirt in pink
+    </p>
+    <p class="product-list_item-price-mod">
+        $15.50
+    </p>
+</div>
+</li> 
+    <li class="product-list_item product_skinny_jeans">
+    <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Skinny push-up jeans
+    </p>
+    <p class="product-list_item-price-mod">
+        $40.00
+    </p>
+</div>
+</li> 
+    <li class="product-list_item product_bag">
+    <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="block">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Leather crossbody bag with...
+    </p>
+    <p class="product-list_item-price-mod">
+        $89.50
+    </p>
+</div>
+</li> 
+    <li class="product-list_item product_shoes">
+    <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star-black.png" alt="" class="star">
+</div>
+    </div>
+        <div>
+<img src="/progetGeneral/src/img/heart.svg" alt="" class="heart">
+</div>
+        <div class="none">
+        <div class="wrap-star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+    <img src="/progetGeneral/src/img/star.svg" alt="" class="star">
+</div>
+
+
+    </div>
+    <div class="product-list_item-wrap">
+    <p class="product-list_item-txt">
+        Men fashion gray shoes
+    </p>
+    <p class="product-list_item-price">
+        $85.50
+    </p>
+</div>
+</li> 
+</ul>
+<div class="toolbar_wrap">
+    <div class="toolbar__wrap-filter">
+<p class="toolbar__title-filter">
+        Sort by
+    </p>
+    <select name="select" class="toolbar__filter"> 
+        <option value="value1" selected>popularity</option>
+        <option value="value2">popularity</option>
+        <option value="value3">popularity</option>
+      </select>
+    </div>
+    <div class="toolbar__wrap-filter">
+    <p class="toolbar__title-filter">
+        Show
+    </p>
+    <input type="number" min="3" max="16" value="12" class="toolbar__filter-value">
+    <p class="toolbar__title-value">
+        products per page
+    </p>
+    </div> 
+    <div class="toolbar__pagination">
+        <ul class="toolbar__pagination-list">
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    1
+                </a>
+            </li>
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    2
+                </a>
+            </li>
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    3
+                </a>
+            </li>
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    ...
+                </a>
+            </li>
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    10
+                </a>
+            </li>
+            <li class="toolbar__pagination-list__item">
+                <a href="" class="toolbar__pagination-list-link">
+                    <img src="/progetGeneral/src/img/left-line.svg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            </div>
+        </section>
+        </main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+.sale-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
+}
+
+.sale-list__item {
+  margin-right: 15px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.sale-list {
+  margin-top: 60px;
+  margin-bottom: 98px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.sale-list-text {
+  font-size: 18px;
+  line-height: 150%;
+  color: #424551;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.sale-list-price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FF4242;
+}
+
+.sale-list-old-price {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #787A80;
+  padding-left: 12px;
+}
+
+.sale-value {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 160%;
+  color: #FFFFFF;
+  background: #FF4242;
+  border-radius: 4px;
+  padding: 1px 8px;
+  position: absolute;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+/*# sourceMappingURL=sale.css.map */

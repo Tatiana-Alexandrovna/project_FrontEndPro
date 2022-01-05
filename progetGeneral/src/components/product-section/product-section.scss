@@ -1,0 +1,156 @@
+.product-section{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 180px;
+}
+.toolbar_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.products{
+    width: 75%;
+}
+.toolbar__title-filter{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551
+}
+.toolbar__title-value{
+    font-size: 14px;
+    line-height: 150%;
+    color: #787A80;
+}
+.toolbar__pagination-list__item{
+    margin-left: 20px;  
+}
+.toolbar__pagination-list-link{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    &:hover{
+        color: #17696A;
+    }
+}
+.toolbar__pagination-list{
+    display: flex;
+    flex-direction: row;
+    margin-left: 180px;
+    justify-content: space-between;
+}
+.toolbar__wrap-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 60px;
+}
+.toolbar__filter,
+.toolbar__filter-value{
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    line-height: 150%;
+    color: #424551;
+    padding: 11px 90px 12px 16px;
+}
+
+.toolbar__filter-value{
+    padding-right: 20px;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 44px;
+}
+.product-list_item{
+    width: 30%;
+    height: 405px;
+    margin-right: 15px;
+    margin-left: 15px;
+    position: relative;
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.product-list_item-txt{
+    font-size: 18px;
+    line-height: 150%;
+    color: #424551;
+}
+.product-list_item-price,
+.product-list_item-price-mod{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    color: #1E212C;
+}
+.product-list_item-price-mod{
+    color: #FF4242;;
+}
+.product_sweater{
+    background-image: url(/progetGeneral/src/img/trending1.jpg);
+    background-size: 100% 100%;
+}
+.product_jeans{
+ background-image: url(/progetGeneral/src/img/jeans.jpg);
+ background-size: 100% 100%;
+}
+.product_cap{
+    background-image: url(/progetGeneral/src/img/cap.jpg);
+    background-size: 100% 100%;
+}
+.product_body{
+    background-image: url(/progetGeneral/src/img/body.jpg);
+    background-size: 100% 100%;
+}
+.product_coat{
+    background-image: url(/progetGeneral/src/img/trending3.jpg);
+    background-size: 100% 100%;
+}
+.product_earrings{
+    background-image: url(/progetGeneral/src/img/earring.jpg);
+    background-size: 100% 100%;
+}
+.product_clock{
+    background-image: url(/progetGeneral/src/img/trending2.jpg);
+    background-size: 100% 100%;
+}
+.product_child_shoes{
+    background-image: url(/progetGeneral/src/img/child-shoe.jpg);
+    background-size: 100% 100%;
+}
+.product_sweatshirt{
+    background-image: url(/progetGeneral/src/img/sweater.jpg);
+    background-size: 100% 100%;
+}
+.product_skinny_jeans{
+    background-image: url(/progetGeneral/src/img/sale2.jpg);
+    background-size: 100% 100%;
+}
+.product_bag{
+    background-image: url(/progetGeneral/src/img/sale1.jpg);
+    background-size: 100% 100%;
+}
+.product_shoes{
+    background-image: url(/progetGeneral/src/img/shoes.jpg);
+    background-size: 100% 100%;
+}
+.product_glasses{
+    background-image: url(/progetGeneral/src/img/glasses.jpg);
+    background-size: 100% 100%;
+}
+.product-list_item-wrap{
+margin-bottom: -76px;
+}

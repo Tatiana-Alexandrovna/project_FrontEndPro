@@ -1,0 +1,24 @@
+.breadcrumb_women{
+    background: #F4F5F7;
+    display: flex;
+    align-items: center;
+
+}
+.breadcrumb__title,
+.breadcrumb__title-active{
+    font-size: 14px;
+    line-height: 150%;
+    color: #424551;
+    margin: 16px 13px;
+}
+.breadcrumb__title-active{
+    color: #9A9CA5;
+}
+.breadcrumb__home-icon{
+    display: block;
+    margin-right: 14px;
+    margin-left: 10%;
+}
+.breadcrumb__right{
+    color: #9A9CA5;
+}

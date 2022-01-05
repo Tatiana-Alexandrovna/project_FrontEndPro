@@ -196,7 +196,8 @@ table {
 .tranding-list {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  width: 80%;
+  margin-left: 10%; }
 
 .tranding {
   background-color: #E5E8ED;
@@ -637,6 +638,10 @@ a {
 
 .product_shoes {
   background-image: url(/progetGeneral/src/img/shoes.jpg);
+  background-size: 100% 100%; }
+
+.product_glasses {
+  background-image: url(/progetGeneral/src/img/glasses.jpg);
   background-size: 100% 100%; }
 
 .product-list_item-wrap {

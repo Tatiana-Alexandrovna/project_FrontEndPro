@@ -1,31 +1,33 @@
 <ul class="banners-list">
-    <% [
-    {titleBanners:'Summer Collections',
-    nameBanners:'Sale Up to 70%',
-    btnBanners:'Explore new prices',
-    className:'banners-list_item-bg1'
-    },
-    {titleBanners:'Deal of the week',
-    nameBanners:'Sale Up to 70%',
-    btnBanners:'Shop now',
-    className:'banners-list_item-bg2'
-    },
-    {titleBanners:'New collection',
-    nameBanners:'Shoes & Bags <br>autumn / winter 2020',
-    btnBanners:'See offers',
-    className:'banners-list_item-bg3'
-    },
-    {titleBanners:'For All new Email Subscribers',
-    nameBanners:'Get 5% Off & Free Delivery',
-    btnBanners:'Subscribe',
-    className:'banners-list_item-bg4'
-    }
-    ].forEach((item,index) => {%>
-        <%- include("./banners-elements.ejs", {
-            titleBanners:item.titleBanners,
-            nameBanners:item.nameBanners,
-            btnBanners:item.btnBanners,
-            className:item.className
-        }) %>
-    <% });%> 
-    </ul>
+    <%- include("progetGeneral/src/components/banners-section/banners-elements.ejs", {
+        titleBanners:'Summer Collections',
+        nameBanners:'Sale Up to 70%',
+        btnBanners:'Explore new prices',
+        className:'banners-list_item-bg1'
+        })
+    %> 
+    <div class="banner-wrap-timer banners-list_item-bg2">
+    <%- include("progetGeneral/src/components/banners-section/banners-elements.ejs", {
+        titleBanners:'Deal of the week',
+        nameBanners:'Sale Up to 70%',
+        btnBanners:'Shop now',
+        className:'banners-list_item-bg',
+        })
+    %> 
+    <%- include("progetGeneral/src/components/banners-section/timer.ejs") %>
+    </div>
+    <%- include("progetGeneral/src/components/banners-section/banners-elements.ejs", {
+        titleBanners:'New collection',
+        nameBanners:'Shoes & Bags <br>autumn / winter 2020',
+        btnBanners:'See offers',
+        className:'banners-list_item-bg3'
+        })
+    %> 
+    <%- include("progetGeneral/src/components/banners-section/banners-elements.ejs", {
+        titleBanners:'For All new Email Subscribers',
+        nameBanners:'Get 5% Off & Free Delivery',
+        btnBanners:'Subscribe',
+        className:'banners-list_item-bg4'
+        })
+    %> 
+</ul>

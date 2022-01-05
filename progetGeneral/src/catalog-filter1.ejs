@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class = 'container'>
+        <div class="header-nav">
+            <%- include("progetGeneral/src/components/header/header-nav.ejs") %>
+        </div>
+        <div class="header-menu">
+            <%- include("progetGeneral/src/components/header/header-menu.ejs") %>
+        </div>
+        <div class="carousel-header">
+            <%- include("progetGeneral/src/components/header/header-carousel.ejs") %>
+        </div>
+        <div class="breadcrumb_women">
+            <%- include("progetGeneral/src/components/breadcrumb/breadcrumb.ejs") %>
+        </div>
+        </header>
+        <main>
+            <section class="product-section container">
+            <div class="sidebar">
+                <%- include("progetGeneral/src/components/product-section/sidebar/button-toolbar.ejs") %>
+                <%- include("progetGeneral/src/components/product-section/sidebar/sidebar.ejs") %>
+            </div>
+            <div class="products">
+                <%- include("progetGeneral/src/components/product-section/product-section.ejs") %>
+            </div>
+        </section>
+        </main>
+</body>
+</html>

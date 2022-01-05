@@ -1,0 +1,28 @@
+.line-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin-right: 350px;
+}
+
+.left-line,
+.right-line {
+  padding: 18px 15px;
+  margin-left: 15px;
+}
+
+.right-line:hover,
+.left-line:hover {
+  border-radius: 50%;
+  background-color: #17696A;
+}
+/*# sourceMappingURL=line.css.map */

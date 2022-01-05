@@ -1,3 +1,8 @@
+.container {
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .green-btn{
     font-weight: bold;
     font-size: 16px;
@@ -23,6 +28,13 @@
     border: 1px solid #17696A;
     border-radius: 4px;
     padding: 0 40px;
+  }
+  .white-btn:hover{
+    background-color: #072020;
+  }
+  .green-btn:hover{
+    background-color: #17696A;
+    color: #fff;
   }
   a:hover, 
   a:active{

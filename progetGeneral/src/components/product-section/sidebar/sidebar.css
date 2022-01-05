@@ -1,0 +1,21 @@
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toolbar__btn {
+  padding: 0 65px;
+  margin-right: 60px;
+  height: 44px;
+  width: 65%;
+}
+/*# sourceMappingURL=sidebar.css.map */

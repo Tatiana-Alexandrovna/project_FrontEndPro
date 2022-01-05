@@ -44,30 +44,6 @@
   color: #1E212C;
 }
 
-.tranding-right-line {
-  border-radius: 50%;
-  background-color: #17696A;
-  padding: 18px 15px;
-}
-
-.tranding-left-line {
-  padding: 18px 15px;
-}
-
-.line-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  margin-right: 350px;
-}
-
 .tranding-img {
   width: 100%;
   height: auto;

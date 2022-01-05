@@ -81,7 +81,7 @@ function changePassTypeIn() {
 		changePasswordTypeIn.style.backgroundImage = 'url(/progetGeneral/src/img/eye-close.svg)';
 	} else {
 		passwordFieldIn.setAttribute('type', 'password');
-		changePasswordTypeIn.style.backgroundImage = 'url(/progetGeneral/src/img/img/Eye.svg)';
+		changePasswordTypeIn.style.backgroundImage = 'url(/progetGeneral/src/img/Eye.svg)';
 	}
 }
 

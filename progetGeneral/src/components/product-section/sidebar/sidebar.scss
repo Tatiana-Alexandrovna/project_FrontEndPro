@@ -1,0 +1,74 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+.toolbar__btn {
+    padding: 0 65px;
+    height: 44px;
+    width: 65%;
+}
+.sidebar__title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.sidebar__filter-search{
+    padding: 9px 92px 9px 12px;
+    border: 1px solid #D7DADD;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.sidebar__search-img{
+    position: absolute;
+    right: 15%;
+    top: 20%
+}
+.sidebar-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 65%;
+}
+.sidebar__search-wrap{
+    position: relative;
+    margin-bottom: 16px;
+}
+.sidebar__filter-list__item{
+    margin-bottom: 8px;
+}
+.filter-item-text{
+    font-size: 14px;
+    line-height: 150%;
+    color: #424551;
+    padding-left: 8px;
+}
+.filter-item-valye{
+    font-size: 14px;
+    line-height: 150%;
+    color: #9A9CA5;
+}
+.sidebar-filter-list__item{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #E5E8ED;;
+}
+.sidebar-filter-list__link{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar-filter-list{
+    width: 65%;
+}
+.sidebar-filter-list__title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E212C;
+}
+.sidebar-filter-list__plus{
+    color: #17696A;
+}

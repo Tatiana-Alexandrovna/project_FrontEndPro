@@ -1,0 +1,47 @@
+<div class="sidebar-wrap">
+    <p class="sidebar__title">Clothes</p>
+    <div class="sidebar__search-wrap">
+    <input class="sidebar__filter-search" type="text" placeholder="Search the clothes">
+    <img src="/progetGeneral/src/img/search.svg" alt="" class="sidebar__search-img">
+</div>
+<ul class="sidebar__filter-list">
+    <% [
+    {titleCheck:'Coats',
+    valueCheck:'(16)'
+    },
+    {titleCheck:'Jackets',
+    valueCheck:'(12)'
+    },
+    {titleCheck:'Suits',
+    valueCheck:'(5)'
+    },
+    {titleCheck:'Dresses',
+    valueCheck:'(11)'
+    },
+    {titleCheck:'Cardigans & sweaters',
+    valueCheck:'(18)'
+    },
+    {titleCheck:'Sweatshirts & hoodies',
+    valueCheck:'(21)'
+    },
+    ].forEach((item,index) => {%>
+        <%- include("progetGeneral/src/components/product-section/sidebar/sidebar-element.ejs", {
+            titleCheck:item.titleCheck,
+            valueCheck:item.valueCheck
+        }) %>
+    <% });%> 
+</ul>
+</div>
+<ul class="sidebar-filter-list">
+    <% [
+    {titleFilter:'Size'},
+    {titleFilter:'Color'},
+    {titleFilter:'Material'},
+    {titleFilter:'Brand'},
+    {titleFilter:'Price'}
+    ].forEach((item,index) => {%>
+        <%- include("progetGeneral/src/components/product-section/sidebar/sidebar-filter-element.ejs", {
+            titleFilter:item.titleFilter,
+        }) %>
+    <% });%> 
+</ul>

@@ -1,19 +1,150 @@
-<img class="header-menu-img" src="/progetGeneral/src/img/logo.svg" alt="">
-<ul class="header-menu-list">
-    <li class="header-menu-list__item">Women</li>
-    <li class="header-menu-list__item">Men</li>
-    <li class="header-menu-list__item">Girls</li>
-    <li class="header-menu-list__item">Boys</li>
-    <li class="header-menu-list__item header-menu-list__item_active">Sale</li>
-</ul>
-<form class="menu-search">
-    <input class="menu-search-text" type="text" placeholder="Search for products">
-  </form>
-  <div class="header-saved">
-      <img class="header-saved-img" src="/progetGeneral/src/img/heart.svg" alt=""> 
-      2
-  </div>
-  <div class="header-basket">
-      <img class="header-basket-img" src="/progetGeneral/src/img/basket.svg" alt="">
-      <span class="header-basket-number">4</span>
-  </div>
+<div class="header-menu">
+	<img class="header-menu-img" src="/progetGeneral/src/img/logo.svg" alt="">
+	<ul class="header-menu-list">
+		<li class="header-menu-list__item">Home</li>
+		<li class="header-menu-list__item">Categories<span class="header__arrow">&darr;</span>
+			<ul class="header__sub-menu-list">
+				<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Men' , link: "#" })%>
+					<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Woman' ,
+						link: "/progetGeneral/public/catalog-filter1.html" })%>
+						<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Children' ,
+							link: "#" })%>
+			</ul>
+		</li>
+		<li class="header-menu-list__item">Megamenu<span class="header__arrow">&darr;</span>
+			<ul class="header__sub-menu-list header__sub-menu-list_megamenu">
+				<li>
+					<ul>
+						<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'New collection' ,
+							link: "#" })%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Best Sellers'
+								, link: "#" })%>
+								<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Plus Size'
+									, link: "#" })%>
+									<li><a class="header__sub-menu-list_red" href="#">Sale up to 70%</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li class="header__sub-menu-list-title">CLOTHES</li>
+						<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Coats' ,
+							link: "#" })%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Jackets' ,
+								link: "#" })%>
+								<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Suits' ,
+									link: "#" })%>
+									<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Dresses'
+										, link: "#" })%>
+										<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+											title: 'Cardigans & sweaters' , link: "#" })%>
+											<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+												title: 'Sweatshirts & hoodies' , link: "#" })%>
+												<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+													title: 'T-shirts & tops' , link: "#" })%>
+													<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+														title: 'Pants' , link: "#" })%>
+														<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+															title: 'Jeans' , link: "#" })%>
+															<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
+																{ title: 'Shorts' , link: "#" })%>
+																<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
+																	{ title: 'Skirts' , link: "#" })%>
+																	<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
+																		{ title: 'Lingerie & nightwear' , link: "#" })%>
+																		<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
+																			{ title: 'Sportswear' , link: "#" })%>
+																			<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
+																				{ title: 'Swimwear' , link: "#" })%>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li class="header__sub-menu-list-title">SHOES</li>
+						<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Boots' ,
+							link: "#" })%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Flat shoes' ,
+								link: "#" })%>
+								<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Heels' ,
+									link: "#" })%>
+									<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Sandals'
+										, link: "#" })%>
+										<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+											title: 'Mules' , link: "#" })%>
+											<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+												title: 'Sliders' , link: "#" })%>
+												<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+													title: 'Slippers' , link: "#" })%>
+													<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+														title: 'Sneakers' , link: "#" })%>
+														<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+															title: 'Leather' , link: "#" })%>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li class="header__sub-menu-list-title">ACCESSORIES</li>
+						<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Bags & bagpacks'
+							, link: "#" })%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+								title: 'Hats & scarves' , link: "#" })%>
+								<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+									title: 'Hair accessories' , link: "#" })%>
+									<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Belts' ,
+										link: "#" })%>
+										<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+											title: 'Jewellery' , link: "#" })%>
+											<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+												title: 'Watches' , link: "#" })%>
+												<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+													title: 'Sunglasses' , link: "#" })%>
+													<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+														title: 'Purses' , link: "#" })%>
+														<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+															title: 'Gloves' , link: "#" })%>
+															<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
+																{ title: 'Socks & tights' , link: "#" })%>
+					</ul>
+				</li>
+				<div class="header__diviver"></div>
+				<div class="header__megamenu-propose">
+					<a href="#">
+						<div class="header__megamenu-propose-img"></div>
+					</a>
+					<a href="#">
+						<div class="header__megamenu-propose-text">Back to school. Sale up to 50%</div>
+					</a>
+					<a href="#">
+						<button class="header__megamenu-propose-btn">See offers <span>&#8594</span></button>
+					</a>
+				</div>
+			</ul>
+		</li>
+		<li class="header-menu-list__item">Account<span class="header__arrow">&darr;</span>
+			<ul class="header__sub-menu-list">
+				<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Profile' , link: "#"
+					})%>
+					<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'My Orders' ,
+						link: "#" })%>
+						<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Wishlist' ,
+							link: "#" })%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+								title: 'Recently Viewed' , link: "#" })%>
+								<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'My Reviews'
+									, link: "#" })%>
+			</ul>
+		</li>
+		<li class="header-menu-list__item header-menu-list__item_active">Sale <span class="header__arrow"></span>
+		</li>
+	</ul>
+	<form class="menu-search">
+		<input class="menu-search-text" type="text" placeholder="Search for products">
+	</form>
+	<div class="header-saved">
+		<img class="header-saved-img" src="/progetGeneral/src/img/heart.svg" alt="">
+		2
+	</div>
+	<div class="header-basket">
+		<img class="header-basket-img" src="/progetGeneral/src/img/basket.svg" alt="">
+		<span class="header-basket-number">4</span>
+	</div>
+</div>

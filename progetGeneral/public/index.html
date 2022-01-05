@@ -10,62 +10,373 @@
 </head>
 
 <body>
-	<header class='container'>
-		<div class="header-nav">
-			<div class="header-nav__tel">
-    Available 24/7 at <a class="header-nav__tel-link"href="tel:+ 405-555-0128">(405) 555-0128</a> 
-</div>
-<ul class="nav-list">
-    <li class="nav-list__item">Delivery & returns</li>
-    <li class="nav-list__item">Track order</li>
-    <li class="nav-list__item">Blog</li>
-    <li class="nav-list__item">Contacts</li>
-</ul>
-<div class="lang-wrap">
-<div class="header-lang">
-    <img src="/progetGeneral/src/img/flag-usa.svg" alt="" class="header-lang__img">
-    <span class="header-lang-value">Eng / $</span>
-    <span>
-        <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.85355 0.146447C8.04882 0.341709 8.04882 0.658291 7.85355 0.853553L4.35355 4.35355C4.15829 4.54882 3.84171 4.54882 3.64645 4.35355L0.146447 0.853553C-0.0488157 0.658291 -0.0488157 0.341709 0.146447 0.146447C0.341709 -0.0488155 0.658291 -0.0488155 0.853553 0.146447L4 3.29289L7.14645 0.146447C7.34171 -0.0488155 7.65829 -0.0488155 7.85355 0.146447Z" fill="white"/>
-        </svg>
-    </span>
-</div>
-    <div class="header-login">
-        <img src="/progetGeneral/src/img/person-vector.svg" alt="">
-        Log in / Register
-    </div>
-</div>
+	<header class='header__container'>
+	<div class="header-nav">
+	<div>
+		<a class="header__info-text" href="tel:+ 405-555-0128">Available 24/7 at (405) 555-0128</a>
+	</div>
+	<ul class="nav-list">
+		<li class="nav-list__item"><a class="header__info-text" href="#">Delivery & returns</a></li>
+		<li class="nav-list__item"><a class="header__info-text" href="#">Track order</li></a>
+		<li class="nav-list__item"><a class="header__info-text" href="#">Blog</li></a>
+		<li class="nav-list__item"><a class="header__info-text" href="#">Contacts</li></a>
+	</ul>
+	<div class="lang-wrap">
+		<div class="header-lang">
+			<img src="/progetGeneral/src/img/flag-usa.svg" alt="" class="header-lang__img">
+			<span class="header__info-text">Eng / $</span>
+			<span>
+				<svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M7.85355 0.146447C8.04882 0.341709 8.04882 0.658291 7.85355 0.853553L4.35355 4.35355C4.15829 4.54882 3.84171 4.54882 3.64645 4.35355L0.146447 0.853553C-0.0488157 0.658291 -0.0488157 0.341709 0.146447 0.146447C0.341709 -0.0488155 0.658291 -0.0488155 0.853553 0.146447L4 3.29289L7.14645 0.146447C7.34171 -0.0488155 7.65829 -0.0488155 7.85355 0.146447Z"
+						fill="white" />
+				</svg>
+			</span>
+			<div class="header_dropdown-lang-wraper">
+				<ul class="header__lang-list">
+					<li>
+						<img width="15" src="/progetGeneral/src/img/flag-france.png" alt="" class="header-lang__img">
+						<span><a class="header__lang-list-text" href="#">Français / $</a></span>
+					</li>
+					<li><img width="15" src="/progetGeneral/src/img/flag-germany.png" alt="" class="header-lang__img">
+						<span><a class="header__lang-list-text" href="#">Deutsch / &#8364</a></span>
+					</li>
+					<li><img width="15" src="/progetGeneral/src/img/flag-italy.png" alt="" class="header-lang__img">
+						<span><a class="header__lang-list-text" href="#">Italianox / &#8364</a></span>
+					</li>
+				</ul>
+			</div>
 		</div>
+		<div class="header-login">
+			<img src="/progetGeneral/src/img/person-vector.svg" alt="">
+			<a class="header__info-text" href="#">Sing in / up</a>
+		</div>
+	</div>
+</div>
 		<div class="header-menu">
-			<img class="header-menu-img" src="/progetGeneral/src/img/logo.svg" alt="">
-<ul class="header-menu-list">
-    <li class="header-menu-list__item">Women</li>
-    <li class="header-menu-list__item">Men</li>
-    <li class="header-menu-list__item">Girls</li>
-    <li class="header-menu-list__item">Boys</li>
-    <li class="header-menu-list__item header-menu-list__item_active">Sale</li>
-</ul>
-<form class="menu-search">
-    <input class="menu-search-text" type="text" placeholder="Search for products">
-  </form>
-  <div class="header-saved">
-      <img class="header-saved-img" src="/progetGeneral/src/img/heart.svg" alt=""> 
-      2
-  </div>
-  <div class="header-basket">
-      <img class="header-basket-img" src="/progetGeneral/src/img/basket.svg" alt="">
-      <span class="header-basket-number">4</span>
-  </div>
+	<img class="header-menu-img" src="/progetGeneral/src/img/logo.svg" alt="">
+	<ul class="header-menu-list">
+		<li class="header-menu-list__item">Home</li>
+		<li class="header-menu-list__item">Categories<span class="header__arrow">&darr;</span>
+			<ul class="header__sub-menu-list">
+				<li><a href="#">
+		Men
+	</a></li>
+					<li><a href="/progetGeneral/public/catalog-filter1.html">
+		Woman
+	</a></li>
+						<li><a href="#">
+		Children
+	</a></li>
+			</ul>
+		</li>
+		<li class="header-menu-list__item">Megamenu<span class="header__arrow">&darr;</span>
+			<ul class="header__sub-menu-list header__sub-menu-list_megamenu">
+				<li>
+					<ul>
+						<li><a href="#">
+		New collection
+	</a></li>
+							<li><a href="#">
+		Best Sellers
+	</a></li>
+								<li><a href="#">
+		Plus Size
+	</a></li>
+									<li><a class="header__sub-menu-list_red" href="#">Sale up to 70%</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li class="header__sub-menu-list-title">CLOTHES</li>
+						<li><a href="#">
+		Coats
+	</a></li>
+							<li><a href="#">
+		Jackets
+	</a></li>
+								<li><a href="#">
+		Suits
+	</a></li>
+									<li><a href="#">
+		Dresses
+	</a></li>
+										<li><a href="#">
+		Cardigans & sweaters
+	</a></li>
+											<li><a href="#">
+		Sweatshirts & hoodies
+	</a></li>
+												<li><a href="#">
+		T-shirts & tops
+	</a></li>
+													<li><a href="#">
+		Pants
+	</a></li>
+														<li><a href="#">
+		Jeans
+	</a></li>
+															<li><a href="#">
+		Shorts
+	</a></li>
+																<li><a href="#">
+		Skirts
+	</a></li>
+																	<li><a href="#">
+		Lingerie & nightwear
+	</a></li>
+																		<li><a href="#">
+		Sportswear
+	</a></li>
+																			<li><a href="#">
+		Swimwear
+	</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li class="header__sub-menu-list-title">SHOES</li>
+						<li><a href="#">
+		Boots
+	</a></li>
+							<li><a href="#">
+		Flat shoes
+	</a></li>
+								<li><a href="#">
+		Heels
+	</a></li>
+									<li><a href="#">
+		Sandals
+	</a></li>
+										<li><a href="#">
+		Mules
+	</a></li>
+											<li><a href="#">
+		Sliders
+	</a></li>
+												<li><a href="#">
+		Slippers
+	</a></li>
+													<li><a href="#">
+		Sneakers
+	</a></li>
+														<li><a href="#">
+		Leather
+	</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li class="header__sub-menu-list-title">ACCESSORIES</li>
+						<li><a href="#">
+		Bags & bagpacks
+	</a></li>
+							<li><a href="#">
+		Hats & scarves
+	</a></li>
+								<li><a href="#">
+		Hair accessories
+	</a></li>
+									<li><a href="#">
+		Belts
+	</a></li>
+										<li><a href="#">
+		Jewellery
+	</a></li>
+											<li><a href="#">
+		Watches
+	</a></li>
+												<li><a href="#">
+		Sunglasses
+	</a></li>
+													<li><a href="#">
+		Purses
+	</a></li>
+														<li><a href="#">
+		Gloves
+	</a></li>
+															<li><a href="#">
+		Socks & tights
+	</a></li>
+					</ul>
+				</li>
+				<div class="header__diviver"></div>
+				<div class="header__megamenu-propose">
+					<a href="#">
+						<div class="header__megamenu-propose-img"></div>
+					</a>
+					<a href="#">
+						<div class="header__megamenu-propose-text">Back to school. Sale up to 50%</div>
+					</a>
+					<a href="#">
+						<button class="header__megamenu-propose-btn">See offers <span>&#8594</span></button>
+					</a>
+				</div>
+			</ul>
+		</li>
+		<li class="header-menu-list__item">Account<span class="header__arrow">&darr;</span>
+			<ul class="header__sub-menu-list">
+				<li><a href="#">
+		Profile
+	</a></li>
+					<li><a href="#">
+		My Orders
+	</a></li>
+						<li><a href="#">
+		Wishlist
+	</a></li>
+							<li><a href="#">
+		Recently Viewed
+	</a></li>
+								<li><a href="#">
+		My Reviews
+	</a></li>
+			</ul>
+		</li>
+		<li class="header-menu-list__item header-menu-list__item_active">Sale <span class="header__arrow"></span>
+		</li>
+	</ul>
+	<form class="menu-search">
+		<input class="menu-search-text" type="text" placeholder="Search for products">
+	</form>
+	<div class="header-saved">
+		<img class="header-saved-img" src="/progetGeneral/src/img/heart.svg" alt="">
+		2
+	</div>
+	<div class="header-basket">
+		<img class="header-basket-img" src="/progetGeneral/src/img/basket.svg" alt="">
+		<span class="header-basket-number">4</span>
+	</div>
+</div>
+			<div class="carousel-header">
+	<img class="carousel-header-img carousel-header__previousli" src="/progetGeneral/src/img/Line-left.svg" alt="">
+	<div class="carousel-header-text carousel-header-text_active">Up to 70% Off. <a class="carousel-header-link" href="">
+			Shop our latest sale styles</a></div>
+	<span class="carousel-header-text">Money back guarantee. <a class="carousel-header-link" href="">Learn
+			more</a></span>
+	<span class="carousel-header-text">Friendly customer suppert. <a class="carousel-header-link" href="">Contact
+			24/7</a></span>
+	<img class="carousel-header-img carousel-header__next" src="/progetGeneral/src/img/Line-right.svg" alt="">
+</div>
+				<div class="sing-in">
+	<div class="sing-in__wrapper">
+		<div class="sing-in__cross"></div>
+		<h2 class="sing__title">Sign in</h2>
+		<h3 class="sing__subtitle">Sign in to your account using email and password provided during
+			registration.</h3>
+		<div>
+			<form action="">
+				<div class="sing__email">
+					<label class="sing__field-text" for="sing-in-email">Email</label>
+					<input class="sing__field" placeholder="Your working email" type="email" id="sing-in-email" required>
+				</div>
+				<div>
+					<label class="sing__field-text" for="sing-in-pass">Password</label>
+					<div class="sing__password-form">
+						<input class="sing__field sing__field-in" placeholder="Enter password" value="omg@wtf.zanzibar"
+							type="password" id="sing-in-pass" required>
+						<div class="sing__password-img sing__in"></div>
+					</div>
+				</div>
+				<div class="sing_checkbox-wrapper">
+					<div>
+						<input type="checkbox" id="remember-me">
+						<label class="sing__remember" for="remember-me">Remember me</label>
+					</div>
+					<a class="sing_checkbox-link" href="#">Forgot password?</a>
+				</div>
+				<button type="submit" class="sing__checkbox-btn">Sign in</button>
+				<p class="sing__text">Don't have an account? <a class="sing__link_up" href="#">Sing
+						up</a></p>
+			</form>
+			<div class="sing__diviver"></div>
+			<div class="sing__social">
+				<p class="sing__social-title">Or sign in with</p>
+				<ul class="sing__social-list">
+					<li><a href="https://uk-ua.facebook.com/">
+							<div class="sing__social-items sing__social-items_one"></div>
+						</a> </li>
+					<li><a href="https://www.google.com/">
+							<div class="sing__social-items sing__social-items_two"></div>
+						</a> </li>
+					<li><a href="https://twitter.com/i/flow/login">
+							<div class="sing__social-items sing__social-items_three"></div>
+						</a> </li>
+					<li><a href="https://www.linkedin.com/login/ru">
+							<div class="sing__social-items sing__social-items_four"></div>
+						</a> </li>
+
+				</ul>
+			</div>
 		</div>
-		<div class="carousel-header">
-			<img class="carousel-header-img" src="/progetGeneral/src/img/Line-left.svg" alt="">
-    <span class="carousel-header-text">Up to 70% Off. </span>
-   <a class="carousel-header-link" href=""> Shop our latest sale styles</a>
-   <img class="carousel-header-img" src="/progetGeneral/src/img/Line-right.svg" alt="">
+	</div>
+</div>
+					<div class="sing-up">
+	<div class="sing-up__wrapper">
+		<div class="sing-up__cross"></div>
+		<h2 class="sing__title">Sign up</h2>
+		<h3 class="sing__subtitle">Registration takes less than a minute but gives you full control over your
+			orders.</h3>
+		<div>
+			<form action="">
+				<div>
+					<label class="sing__field-text" for="sing-up-fullname">Full Name</label>
+					<input class="sing__field" placeholder="Your full name" type="text" id="sing-up-fullname" required>
+				</div>
+				<div class="sing__email">
+					<label class="sing__field-text" for="sing-up-email">Email</label>
+					<input class="sing__field" placeholder="Your working email" type="email" id="sing-up-email" required>
+				</div>
+				<div>
+					<label class="sing__field-text" for="sing-up-pass">Password</label>
+					<div class="sing__password-form">
+						<input class="sing__field sing__field-up_one" placeholder="Enter password" type="password"
+							value="omg@wtf.zanzibar" id="sing-up-pass" required>
+						<div class="sing__password-img sing__up_one"></div>
+					</div>
+				</div>
+				<div class="sing-up__password">
+					<label class="sing__field-text" for="sing-up-pass">Confirm Password</label>
+					<div class="sing__password-form">
+						<input class="sing__field sing__field-up_two" placeholder="Enter password" type="password"
+							value="omg@wtf.zanzibar" id="sing-up-pass" required>
+						<div class="sing__password-img sing__up_two"></div>
+					</div>
+				</div>
+				<div class="sing_checkbox-wrapper sing_checkbox-wrapper_up">
+					<div>
+						<input type="checkbox" id="remember-me">
+						<label class="sing__remember" for="remember-me">Remember me</label>
+					</div>
+				</div>
+				<button type="submit" class="sing__checkbox-btn">Sign up</button>
+				<p class="sing__text">Already have an account? <a class="sing__link_in" href="#">Sign
+						in</a>
+				</p>
+			</form>
+			<div class="sing__diviver"></div>
+			<div class="sing__social">
+				<p class="sing__social-title">Or sign in with</p>
+				<ul class="sing__social-list">
+					<li><a href="https://uk-ua.facebook.com/">
+							<div class="sing__social-items sing__social-items_one"></div>
+						</a> </li>
+					<li><a href="https://www.google.com/">
+							<div class="sing__social-items sing__social-items_two"></div>
+						</a> </li>
+					<li><a href="https://twitter.com/i/flow/login">
+							<div class="sing__social-items sing__social-items_three"></div>
+						</a> </li>
+					<li><a href="https://www.linkedin.com/login/ru">
+							<div class="sing__social-items sing__social-items_four"></div>
+						</a> </li>
+				</ul>
+			</div>
 		</div>
-	</header>
-	<section class="hero-section">
+	</div>
+</div>
+</header>
+		<section class="hero-section">
 
 	<div class="hero-section__slider">
 		<div class="hero-section__slide hero-section__slide_active">
@@ -167,15 +478,15 @@
 </ul>
 
 </section>
-		<section class="new-arrivals">
-			
+			<section class="new-arrivals">
+				
     <div class="container">
         <h2 class="main-title">New arrivals</h2>
         <p class="arrivals-subtitle">Check out our latest arrivals for the upcoming season <br>
             <span class='arrivals-subtitle__link'>See the collection here</span>
         </p>
     </div>
-				<ul class="arrivals-list">
+					<ul class="arrivals-list">
     <li class="arrivals-list_item">
         <div class="arrivals-list_item-wrap">
         <img src="/progetGeneral/src/img/cap.jpg" alt="">
@@ -288,7 +599,7 @@
         </p>
     </li>
 </ul>
-					<ul class="arrivals-bullets">
+						<ul class="arrivals-bullets">
     <li class="arrivals-bullets__item arrivals-bullets__item-active">
       <button class="arrivals-bullets_button"></button>
     </li>
@@ -314,9 +625,9 @@
         <button class="arrivals-bullets_button"></button>
       </li>
   </ul>
-		</section>
-		<section class="banners-section">
-			<ul class="banners-list">
+			</section>
+			<section class="banners-section">
+				<ul class="banners-list">
     
         <li class="banners-list_item banners-list_item-bg1">
     <p class="title-banner-list"> Summer Collections</p>
@@ -343,9 +654,9 @@
 </li>
      
     </ul>
-		</section>
-		<section class="categories-section">
-			<div class="categories">
+			</section>
+			<section class="categories-section">
+				<div class="categories">
   <p class="main-title">Popular categories</p>
   <ul class="categories-list">
     <li class="categories-list-item">
@@ -374,9 +685,9 @@
     </li>
   </ul>
 </div>
-		</section>
-		<section class="tranding-section">
-			<div class="tranding">
+			</section>
+			<section class="tranding-section">
+				<div class="tranding">
     <p class="main-title align-left margin-left">Trending now</p>
     <div class="line-wrap">
     <a href=""  class="left-line-link display-block">
@@ -433,9 +744,9 @@
 </ul>
     <button class="green-btn align-center display-block">Explore top sales</button>
 </div>
-		</section>
-		<section>
-			<div class="sale-section">
+			</section>
+			<section>
+				<div class="sale-section">
     <div class="main-title align-items-start margin-left">Sale up to 70%</div>
     <div class="line-wrap">
     <a href=""  class="left-line-link display-block">
@@ -498,9 +809,9 @@
     </ul>
     <button class="green-btn display-block">See all sale products</button>
 </div>
-		</section>
-		<section>
-			<div class="mobile-app-section">
+			</section>
+			<section>
+				<div class="mobile-app-section">
     <div class="img-mobile-app">
         <img src="/progetGeneral/src/img/mobile-apps-girl.svg" alt="">
     </div>
@@ -520,9 +831,9 @@
         </div>
     </div>
 </div>
-		</section>
-		<section>
-			<div class="services-section">
+			</section>
+			<section>
+				<div class="services-section">
     <ul class="services-list">
         <li class="services-list__item">
             <img src="/progetGeneral/src/img/service1.svg" alt="">
@@ -546,9 +857,9 @@
         </li>
     </ul>
 </div>
-		</section>
-		<section>
-			<div class="instagram-section">
+			</section>
+			<section>
+				<div class="instagram-section">
     <div class="our-instagram">
         <p class="text-instagram-section">
             Follow us on Instagram
@@ -574,8 +885,8 @@
     </ul>
     </div>
 </div>
-		</section>
-		<div class="fashion">
+			</section>
+			<div class="fashion">
 	<div class="fashion__header">
 	<h2 class="fashion__text">Fashion blog</h2>
 	<form action="#"><button class="fashion__btn">View blog</button></form>
@@ -666,7 +977,7 @@
 </a>
 </div>
 </div>
-			<div class="subscribe">
+				<div class="subscribe">
 	<div class="subscribe__container">
 		<div class="subscribe__card">
 	<h2 class="subscribe__title">Subscribe for updates</h2>
@@ -699,7 +1010,7 @@
 </div>
 	</div>
 </div>
-				<footer class="footer">
+					<footer class="footer">
 	<div class="footer__container">
 		<div class="footer__row">
 			<div class="footer__columns">
@@ -822,7 +1133,12 @@
 	<a href="#"><span class="footer__info footer__top-link">Go to top</span></a>
 </div>
 </footer>
-					<script src="/progetGeneral/src/components/hero-section/hero-section.js"></script>
+						<script src="/progetGeneral/src/components/header/header.js"></script>
+						<script src="/progetGeneral/src/components/hero-section/hero-section.js"></script>
+						<script src="/progetGeneral/src/components/subscribe/subscribe.js"></script>
+
+
+
 </body>
 
 </html>

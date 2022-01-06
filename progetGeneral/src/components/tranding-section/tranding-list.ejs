@@ -1,27 +1,29 @@
 <ul class="tranding-list">
-    <li class="categories-list__item">
-        <a href="" class="tranding-list-link">
-            <img src="/progetGeneral/src/img/trending1.jpg" alt="" class="tranding-img" />
-            <p class="tranding-list-text">Shirt with insertion lace trims</p>
-            <p class="tranding-list-price">$49.95</p>
-            <%- include("progetGeneral/src/components/like-components/stars5.ejs") %>
-            <%- include("progetGeneral/src/components/like-components/like.ejs") %>
-        </a>
-    </li>
-    <li class="tranding-list__item">
-        <a href="" class="tranding-list-link">
-            <img src="/progetGeneral/src/img/trending2.jpg" alt="" class="tranding-img" />
-            <p class="tranding-list-text">Chrono watch with blue leather belt</p>
-            <p class="tranding-list-price">$120.60</p>
-            <%- include("progetGeneral/src/components/like-components/stars4.ejs") %>
-            <%- include("progetGeneral/src/components/like-components/like.ejs") %>
-        </a>
-    </li>
-    <li class="tranding-list__item">
-        <a href="" class="tranding-list-link">
-            <img src="/progetGeneral/src/img/trending3.jpg" alt="" class="tranding-img" />
-            <p class="tranding-list-text">Check coat with colour contrast</p>
-            <p class="tranding-list-price">$183.45</p>
-        </a>
-    </li>
+    <%- include("progetGeneral/src/components/product-section/product-element.ejs", {
+            titleArrivals:'Shirt with insertion lace trims',
+            priceArrivals:'$49.95',
+            displayStars5:'block',
+            displayStars4:'none',
+            className:'product_sweater',
+            classNamePrice:'product-list_item-price'
+            })
+        %>
+    <%- include("progetGeneral/src/components/product-section/product-element.ejs", {
+            titleArrivals:'Chrono watch with blue...',
+            priceArrivals:'$120.60',
+            displayStars5:'none',
+            displayStars4:'block',
+            className:'product_clock',
+            classNamePrice:'product-list_item-price'
+            })
+        %>
+    <%- include("progetGeneral/src/components/product-section/product-element.ejs", {
+            titleArrivals:'Check coat with colour contrast',
+            priceArrivals:'$183.45',
+            displayStars5:'none',
+            displayStars4:'none',
+            className:'product_coat',
+            classNamePrice:'product-list_item-price'
+            })
+        %>
 </ul>

@@ -1,0 +1,147 @@
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+.fashion {
+	width: 1230px;
+	height: 602px;
+	padding: 0;
+	margin: 0 345px 304px;
+}
+.fashion__header {
+	display: flex;
+	justify-content: space-between;
+}
+.fashion__text {
+	color: #1e212c;
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	margin-top: 0;
+}
+.fashion__btn {
+	border: 1px solid #17696a;
+	box-sizing: border-box;
+	border-radius: 4px;
+	width: 130px;
+	height: 44px;
+	color: #17696a;
+	background: #ffffff;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 16px;
+	margin-bottom: 60px;
+}
+.fashion__btn:hover {
+	background: #17696a;
+	color: #fff;
+	cursor: pointer;
+}
+
+.fashion__row {
+	display: flex;
+	justify-content: space-between;
+}
+.fashion__column {
+	min-width: 600px;
+	margin-right: 30px;
+	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+		0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	border-radius: 4px;
+	margin-bottom: 80px;
+}
+.card-fashion {
+	position: relative;
+}
+.card-fashion__image img {
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	border-radius: 4px 4px 0px 0px;
+	margin-bottom: 24px;
+}
+.card-fashion__image img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	border-radius: 4px 4px 0px 0px;
+	margin-bottom: 24px;
+}
+.card-fashion__title {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1e212c;
+	margin-bottom: 12px;
+	margin-left: 24px;
+	display: inline-block;
+}
+.card-fashion__title:hover {
+	color: #17696a;
+}
+.card-fashion__links {
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+	margin-left: 24px;
+}
+.card-fashion__link {
+	font-size: 14px;
+	line-height: 150%;
+	color: #787a80;
+	margin-right: 12px;
+}
+.card-fashion__link:hover {
+	color: #1e212c;
+}
+.card-fashion__divider {
+	margin-right: 12px;
+}
+.card-fashion__icon {
+	width: 14.43px;
+	height: 12.83px;
+	background-image: url(/progetGeneral/src/img/Vector.svg);
+	margin-right: -4px;
+}
+.card-fashion__text {
+	margin-left: 24px;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+	margin: 0 24px 21px 24px;
+}
+.card-fashion__pointer {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	background-image: url(/progetGeneral/src/img/cursor.svg);
+	left: 364px;
+	top: 358px;
+}
+.fashion__brands {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 120px;
+}
+.fashion__brands-logo {
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 64px;
+	filter: grayscale(100%);
+	opacity: 0.5;
+	transition-property: filter, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0ms;
+}
+.fashion__brands-logo:hover {
+	filter: grayscale(0%);
+	opacity: 1;
+}

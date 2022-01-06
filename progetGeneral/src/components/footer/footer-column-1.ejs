@@ -1,0 +1,21 @@
+<div class="footer__columns">
+	<ul class="footer__list">
+		<li class="footer__item footer__list-title">HELP</li></a>
+		<% [
+		{title: 'Delivery & returns'
+		},
+		{title: 'FAQ'
+		},
+		{title: 'Track order'
+		},
+		{title: 'Contacts'
+		},
+		{title: 'Blog'
+		},
+		].forEach((item, index) => {%>
+			<%- include("progetGeneral/src/components/footer/footer__column-items.ejs", {
+				title:item.title
+			}) %>
+			<%});%>
+	</ul>
+</div>

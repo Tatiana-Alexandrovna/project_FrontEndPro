@@ -1,0 +1,20 @@
+<div class="fashion__brands">
+	<% [
+	{background: 'url(/progetGeneral/src/img/vans.svg)'
+	},
+	{background: 'url(/progetGeneral/src/img/diesel.svg)'
+	},
+	{background: 'url(/progetGeneral/src/img/under-armour.svg)'
+	},
+	{background: 'url(/progetGeneral/src/img/columbia.svg)'
+	},
+	{background: 'url(/progetGeneral/src/img/levis.svg)'
+	},
+	{background: 'url(/progetGeneral/src/img/mango.svg)'
+	},
+	].forEach((item, index) => {%>
+		<%- include("progetGeneral/src/components/fashion-blog/fashion-blog__brands_item.ejs", {
+			background:item.background
+		}) %>
+		<%});%>
+</div>

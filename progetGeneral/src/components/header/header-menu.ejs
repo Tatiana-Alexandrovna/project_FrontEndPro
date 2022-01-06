@@ -4,105 +4,183 @@
 		<li class="header-menu-list__item">Home</li>
 		<li class="header-menu-list__item">Categories<span class="header__arrow">&darr;</span>
 			<ul class="header__sub-menu-list">
-				<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Men' , link: "#" })%>
-				<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Woman' ,
-						link: "/progetGeneral/public/catalog-filter1.html" })%>
-				<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Children' ,
-							link: "#" })%>
+				<% [
+				{title: `Men`,
+				link: "#"
+				},
+				{title: `Woman`,
+				link: "/progetGeneral/public/catalog-filter1.html"
+				},
+				{title: `Children`,
+				link: "#"
+				},
+				].forEach((item, index) => {%>
+					<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+						title:item.title,
+						link:item.link
+					}) %>
+					<%});%>
 			</ul>
 		</li>
 		<li class="header-menu-list__item">Megamenu<span class="header__arrow">&darr;</span>
 			<ul class="header__sub-menu-list header__sub-menu-list_megamenu">
 				<li>
 					<ul>
-						<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'New collection' ,
-							link: "#" })%>
-							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Best Sellers'
-								, link: "#" })%>
-								<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Plus Size'
-									, link: "#" })%>
+						<% [
+						{title: `New collection`,
+						link: "#"
+						},
+						{title: `Best Sellers`,
+						link: "№"
+						},
+						{title: `Plus Size`,
+						link: "#"
+						},
+						].forEach((item, index) => {%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+								title:item.title,
+								link:item.link
+							}) %>
+							<%});%>
 									<li><a class="header__sub-menu-list_red" href="#">Sale up to 70%</a></li>
 					</ul>
 				</li>
 				<li>
 					<ul>
 						<li class="header__sub-menu-list-title">CLOTHES</li>
-						<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Coats' ,
-							link: "#" })%>
-							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Jackets' ,
-								link: "#" })%>
-								<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Suits' ,
-									link: "#" })%>
-									<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Dresses'
-										, link: "#" })%>
-										<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-											title: 'Cardigans & sweaters' , link: "#" })%>
-											<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-												title: 'Sweatshirts & hoodies' , link: "#" })%>
-												<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-													title: 'T-shirts & tops' , link: "#" })%>
-													<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-														title: 'Pants' , link: "#" })%>
-														<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-															title: 'Jeans' , link: "#" })%>
-															<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
-																{ title: 'Shorts' , link: "#" })%>
-																<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
-																	{ title: 'Skirts' , link: "#" })%>
-																	<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
-																		{ title: 'Lingerie & nightwear' , link: "#" })%>
-																		<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
-																			{ title: 'Sportswear' , link: "#" })%>
-																			<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
-																				{ title: 'Swimwear' , link: "#" })%>
+						<% [
+						{title: `Coats`,
+						link: "#"
+						},
+						{title: `Jackets`,
+						link: "№"
+						},
+						{title: `Suits`,
+						link: "#"
+						},
+						{title: `Dresses`,
+						link: "#"
+						},
+						{title: `Cardigans & sweaters`,
+						link: "№"
+						},
+						{title: `Sweatshirts & hoodies`,
+						link: "#"
+						},
+						{title: `T-shirts & tops`,
+						link: "#"
+						},
+						{title: `Pants`,
+						link: "№"
+						},
+						{title: `Jeans`,
+						link: "#"
+						},
+						{title: `Shorts`,
+						link: "#"
+						},
+						{title: `Skirts`,
+						link: "#"
+						},
+						{title: `Lingerie & nightwear`,
+						link: "#"
+						},
+						{title: `Sportswear`,
+						link: "#"
+						},
+						{title: `Swimwear`,
+						link: "#"
+						},
+						].forEach((item, index) => {%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+								title:item.title,
+								link:item.link
+							}) %>
+							<%});%>
 					</ul>
 				</li>
 				<li>
 					<ul>
 						<li class="header__sub-menu-list-title">SHOES</li>
-						<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Boots' ,
-							link: "#" })%>
-							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Flat shoes' ,
-								link: "#" })%>
-								<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Heels' ,
-									link: "#" })%>
-									<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Sandals'
-										, link: "#" })%>
-										<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-											title: 'Mules' , link: "#" })%>
-											<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-												title: 'Sliders' , link: "#" })%>
-												<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-													title: 'Slippers' , link: "#" })%>
-													<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-														title: 'Sneakers' , link: "#" })%>
-														<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-															title: 'Leather' , link: "#" })%>
+						<% [
+						{title: `Boots`,
+						link: "#"
+						},
+						{title: `Flat shoes`,
+						link: "№"
+						},
+						{title: `Heels`,
+						link: "#"
+						},
+						{title: `Sandals`,
+						link: "#"
+						},
+						{title: `Mules`,
+						link: "№"
+						},
+						{title: `Sliders`,
+						link: "#"
+						},
+						{title: `Slippers`,
+						link: "#"
+						},
+						{title: `Sneakers`,
+						link: "№"
+						},
+						{title: `Leather`,
+						link: "#"
+						},
+						].forEach((item, index) => {%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+								title:item.title,
+								link:item.link
+							}) %>
+							<%});%>
 					</ul>
 				</li>
 				<li>
 					<ul>
 						<li class="header__sub-menu-list-title">ACCESSORIES</li>
-						<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Bags & bagpacks'
-							, link: "#" })%>
+						<% [
+						{title: `Bags & bagpacks`,
+						link: "#"
+						},
+						{title: `Flat shoes`,
+						link: "№"
+						},
+						{title: `Hats & scarves`,
+						link: "#"
+						},
+						{title: `Hair accessories`,
+						link: "#"
+						},
+						{title: `Belts`,
+						link: "№"
+						},
+						{title: `Jewellery`,
+						link: "#"
+						},
+						{title: `Watches`,
+						link: "#"
+						},
+						{title: `Sunglasses`,
+						link: "№"
+						},
+						{title: `Purses`,
+						link: "#"
+						},
+						{title: `Gloves`,
+						link: "#"
+						},
+						{title: `Socks & tights`,
+						link: "#"
+						},
+						].forEach((item, index) => {%>
 							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-								title: 'Hats & scarves' , link: "#" })%>
-								<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-									title: 'Hair accessories' , link: "#" })%>
-									<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Belts' ,
-										link: "#" })%>
-										<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-											title: 'Jewellery' , link: "#" })%>
-											<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-												title: 'Watches' , link: "#" })%>
-												<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-													title: 'Sunglasses' , link: "#" })%>
-													<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-														title: 'Purses' , link: "#" })%>
-														<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-															title: 'Gloves' , link: "#" })%>
-															<%- include("progetGeneral/src/components/header/header-submenu-item.ejs",
-																{ title: 'Socks & tights' , link: "#" })%>
+								title:item.title,
+								link:item.link
+							}) %>
+							<%});%>
 					</ul>
 				</li>
 				<div class="header__diviver"></div>
@@ -121,16 +199,31 @@
 		</li>
 		<li class="header-menu-list__item">Account<span class="header__arrow">&darr;</span>
 			<ul class="header__sub-menu-list">
-				<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Profile' , link: "#"
-					})%>
-					<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'My Orders' ,
-						link: "#" })%>
-						<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'Wishlist' ,
-							link: "#" })%>
+				<% [
+						{title: `Profile`,
+						link: "#"
+						},
+						{title: `My Orders`,
+						link: "№"
+						},
+						{title: `Hats & scarves`,
+						link: "#"
+						},
+						{title: `Wishlist`,
+						link: "#"
+						},
+						{title: `Recently Viewed`,
+						link: "№"
+						},
+						{title: `My Reviews`,
+						link: "#"
+						},
+						].forEach((item, index) => {%>
 							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
-								title: 'Recently Viewed' , link: "#" })%>
-								<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", { title: 'My Reviews'
-									, link: "#" })%>
+								title:item.title,
+								link:item.link
+							}) %>
+							<%});%>
 			</ul>
 		</li>
 		<li class="header-menu-list__item header-menu-list__item_active">Sale <span class="header__arrow"></span>

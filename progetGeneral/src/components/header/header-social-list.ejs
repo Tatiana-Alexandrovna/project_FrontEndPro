@@ -1,0 +1,21 @@
+<ul class="sing__social-list">
+	<% [
+	{link: `https://uk-ua.facebook.com/`,
+		className: 'sing__social-items_one'
+	},
+	{link: `https://www.google.com/`,
+		className: 'sing__social-items_two'
+	},
+	{link: `https://twitter.com/i/flow/login`,
+		className: 'sing__social-items_three'
+	},
+	{link: `https://www.linkedin.com/login/ru`,
+		className: 'sing__social-items_four'
+	},
+	].forEach((item, index) => {%>
+		<%- include("progetGeneral/src/components/header/header-social-item.ejs", {
+			link:item.link,
+			className:item.className
+		}) %>
+		<%});%>
+</ul>

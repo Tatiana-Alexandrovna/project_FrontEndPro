@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+	<%- include("progetGeneral/src/components/header/header.ejs") %>
     <header class = 'container'>
         <div class="breadcrumb_women">
             <%- include("progetGeneral/src/components/breadcrumb/breadcrumb.ejs") %>
@@ -24,5 +25,9 @@
             </div>
         </section>
         </main>
+		  <%- include("progetGeneral/src/components/subscribe/subscribe.ejs") %>
+		  <%- include("progetGeneral/src/components/footer/footer.ejs") %>
+		  <script src="/progetGeneral/src/components/header/header.js"></script>
+		  <script src="/progetGeneral/src/components/subscribe/subscribe.js"></script>
 </body>
 </html>

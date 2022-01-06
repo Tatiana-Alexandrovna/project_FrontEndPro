@@ -1,8 +1,18 @@
 <ul class="hero-section__list">
-	<%- include("progetGeneral/src/components/hero-section/hero-section_list-item.ejs", { title: `Women's` ,
-		img: '/progetGeneral/src/img/women-hero-section.jpg' })%>
-		<%- include("progetGeneral/src/components/hero-section/hero-section_list-item.ejs", { title: `Men's` ,
-			img: '/progetGeneral/src/img/men-hero-section.jpg' })%>
-			<%- include("progetGeneral/src/components/hero-section/hero-section_list-item.ejs", { title: `Kids'` ,
-				img: '/progetGeneral/src/img/child-hero-section.png' })%>
+	<% [
+{title: `Women's`,
+img: '/progetGeneral/src/img/women-hero-section.jpg'
+},
+{title: `Men's`,
+img: '/progetGeneral/src/img/men-hero-section.jpg'
+},
+{title: `Kids'`,
+img: '/progetGeneral/src/img/child-hero-section.png'
+},
+].forEach((item, index) => {%>
+	<%- include("progetGeneral/src/components/hero-section/hero-section_list-item.ejs", {
+		title:item.title,
+		img:item.img
+	}) %>
+	<%});%>
 </ul>

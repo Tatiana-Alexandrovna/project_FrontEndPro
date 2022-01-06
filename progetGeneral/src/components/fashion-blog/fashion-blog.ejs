@@ -1,0 +1,31 @@
+<div class="fashion">
+	<%- include("progetGeneral/src/components/fashion-blog/fashion-header.ejs") %>
+		<div class="fashion__row">
+			<% [
+			{image: '/progetGeneral/src/img/card-left.jpg',
+			title: 'Bag Trends for Summer 2020',
+			link: 'Fashion',
+			date:'August 24, 2020',
+			comments: 'No comments',
+			text: 'Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis...'
+			},
+			{image: '/progetGeneral/src/img/card-right.jpg',
+			title: 'Top 10 of This Season’s Hottest Sneakers',
+			link: 'Lifestyle',
+			date:'July 16, 2020',
+			comments: '4 comments',
+			text: 'Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis...'
+			},
+			].forEach((item, index) => {%>
+				<%- include("progetGeneral/src/components/fashion-blog/fashion-blog__card.ejs", {
+					image:item.image,
+					title:item.title,
+					link:item.link,
+					date:item.date,
+					comments:item.comments,
+					text:item.text
+				}) %>
+				<%});%>
+		</div>
+		<%- include("progetGeneral/src/components/fashion-blog/fashion-brands.ejs") %>
+</div>

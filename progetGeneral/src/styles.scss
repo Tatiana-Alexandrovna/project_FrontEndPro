@@ -1,4 +1,6 @@
 @import "css/reset.scss";
+@import "components/header/header.scss";
+@import "components/hero-section/hero-section.scss";
 @import "components/arrivals-section/arrivals.scss";
 @import "components/banners-section/banners.scss";
 @import "components/banners-section/timer.scss";
@@ -11,6 +13,9 @@
 @import "components/mobile-app-section/mobile-app.scss";
 @import "components/services-section/services.scss";
 @import "components/instagram-section/instagram.scss";
+@import "components/fashion-blog/fashion-blog.scss";
+@import "components/subscribe/subscribe.scss";
+@import "components/footer/footer.scss";
 @import "components/breadcrumb/breadcrumb.scss";
 @import "components/product-section/product-section.scss";
 @import "components/product-section/sidebar/sidebar.scss";

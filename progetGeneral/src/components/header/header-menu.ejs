@@ -1,0 +1,243 @@
+<div class="header-menu">
+	<img class="header-menu-img" src="/progetGeneral/src/img/logo.svg" alt="">
+	<ul class="header-menu-list">
+		<li class="header-menu-list__item">Home</li>
+		<li class="header-menu-list__item">Categories<span class="header__arrow">&darr;</span>
+			<ul class="header__sub-menu-list">
+				<% [
+				{title: `Men`,
+				link: "#"
+				},
+				{title: `Woman`,
+				link: "/progetGeneral/public/catalog-filter1.html"
+				},
+				{title: `Children`,
+				link: "#"
+				},
+				].forEach((item, index) => {%>
+					<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+						title:item.title,
+						link:item.link
+					}) %>
+					<%});%>
+			</ul>
+		</li>
+		<li class="header-menu-list__item">Megamenu<span class="header__arrow">&darr;</span>
+			<ul class="header__sub-menu-list header__sub-menu-list_megamenu">
+				<li>
+					<ul>
+						<% [
+						{title: `New collection`,
+						link: "#"
+						},
+						{title: `Best Sellers`,
+						link: "№"
+						},
+						{title: `Plus Size`,
+						link: "#"
+						},
+						].forEach((item, index) => {%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+								title:item.title,
+								link:item.link
+							}) %>
+							<%});%>
+									<li><a class="header__sub-menu-list_red" href="#">Sale up to 70%</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li class="header__sub-menu-list-title">CLOTHES</li>
+						<% [
+						{title: `Coats`,
+						link: "#"
+						},
+						{title: `Jackets`,
+						link: "№"
+						},
+						{title: `Suits`,
+						link: "#"
+						},
+						{title: `Dresses`,
+						link: "#"
+						},
+						{title: `Cardigans & sweaters`,
+						link: "№"
+						},
+						{title: `Sweatshirts & hoodies`,
+						link: "#"
+						},
+						{title: `T-shirts & tops`,
+						link: "#"
+						},
+						{title: `Pants`,
+						link: "№"
+						},
+						{title: `Jeans`,
+						link: "#"
+						},
+						{title: `Shorts`,
+						link: "#"
+						},
+						{title: `Skirts`,
+						link: "#"
+						},
+						{title: `Lingerie & nightwear`,
+						link: "#"
+						},
+						{title: `Sportswear`,
+						link: "#"
+						},
+						{title: `Swimwear`,
+						link: "#"
+						},
+						].forEach((item, index) => {%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+								title:item.title,
+								link:item.link
+							}) %>
+							<%});%>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li class="header__sub-menu-list-title">SHOES</li>
+						<% [
+						{title: `Boots`,
+						link: "#"
+						},
+						{title: `Flat shoes`,
+						link: "№"
+						},
+						{title: `Heels`,
+						link: "#"
+						},
+						{title: `Sandals`,
+						link: "#"
+						},
+						{title: `Mules`,
+						link: "№"
+						},
+						{title: `Sliders`,
+						link: "#"
+						},
+						{title: `Slippers`,
+						link: "#"
+						},
+						{title: `Sneakers`,
+						link: "№"
+						},
+						{title: `Leather`,
+						link: "#"
+						},
+						].forEach((item, index) => {%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+								title:item.title,
+								link:item.link
+							}) %>
+							<%});%>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li class="header__sub-menu-list-title">ACCESSORIES</li>
+						<% [
+						{title: `Bags & bagpacks`,
+						link: "#"
+						},
+						{title: `Flat shoes`,
+						link: "№"
+						},
+						{title: `Hats & scarves`,
+						link: "#"
+						},
+						{title: `Hair accessories`,
+						link: "#"
+						},
+						{title: `Belts`,
+						link: "№"
+						},
+						{title: `Jewellery`,
+						link: "#"
+						},
+						{title: `Watches`,
+						link: "#"
+						},
+						{title: `Sunglasses`,
+						link: "№"
+						},
+						{title: `Purses`,
+						link: "#"
+						},
+						{title: `Gloves`,
+						link: "#"
+						},
+						{title: `Socks & tights`,
+						link: "#"
+						},
+						].forEach((item, index) => {%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+								title:item.title,
+								link:item.link
+							}) %>
+							<%});%>
+					</ul>
+				</li>
+				<div class="header__diviver"></div>
+				<div class="header__megamenu-propose">
+					<a href="#">
+						<div class="header__megamenu-propose-img"></div>
+					</a>
+					<a href="#">
+						<div class="header__megamenu-propose-text">Back to school. Sale up to 50%</div>
+					</a>
+					<a href="#">
+						<button class="header__megamenu-propose-btn">See offers <span>&#8594</span></button>
+					</a>
+				</div>
+			</ul>
+		</li>
+		<li class="header-menu-list__item">Account<span class="header__arrow">&darr;</span>
+			<ul class="header__sub-menu-list">
+				<% [
+						{title: `Profile`,
+						link: "#"
+						},
+						{title: `My Orders`,
+						link: "№"
+						},
+						{title: `Hats & scarves`,
+						link: "#"
+						},
+						{title: `Wishlist`,
+						link: "#"
+						},
+						{title: `Recently Viewed`,
+						link: "№"
+						},
+						{title: `My Reviews`,
+						link: "#"
+						},
+						].forEach((item, index) => {%>
+							<%- include("progetGeneral/src/components/header/header-submenu-item.ejs", {
+								title:item.title,
+								link:item.link
+							}) %>
+							<%});%>
+			</ul>
+		</li>
+		<li class="header-menu-list__item header-menu-list__item_active">Sale <span class="header__arrow"></span>
+		</li>
+	</ul>
+	<form class="menu-search">
+		<input class="menu-search-text" type="text" placeholder="Search for products">
+	</form>
+	<div class="header-saved">
+		<img class="header-saved-img" src="/progetGeneral/src/img/heart.svg" alt="">
+		2
+	</div>
+	<div class="header-basket">
+		<img class="header-basket-img" src="/progetGeneral/src/img/basket.svg" alt="">
+		<span class="header-basket-number">4</span>
+	</div>
+</div>

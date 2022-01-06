@@ -1,0 +1,21 @@
+<div class="subscribe__checkbox">
+	<% [
+	{title: `Woman`,
+	className: 'woman'
+	},
+	{title: `Men`,
+	className: 'man'
+	},
+	{title: `Girls`,
+	className: 'girls'
+	},
+	{title: `Boys`,
+	className: 'boys'
+	},
+	].forEach((item, index) => {%>
+		<%- include("progetGeneral/src/components/Subscribe/subscribe-btn.ejs", {
+			title:item.title,
+			className:item.className
+		}) %>
+		<%});%>
+</div>

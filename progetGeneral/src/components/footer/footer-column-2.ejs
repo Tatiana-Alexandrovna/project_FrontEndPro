@@ -1,9 +1,19 @@
 <div class="footer__columns">
 	<ul class="footer__list">
 		<li class="footer__item footer__list-title">Shop</li></a>
-		<%- include("progetGeneral/src/components/footer/footer__column-items.ejs", { title: 'Blog' }) %>
-			<%- include("progetGeneral/src/components/footer/footer__column-items.ejs", { title: 'Trending now' }) %>
-				<%- include("progetGeneral/src/components/footer/footer__column-items.ejs", { title: 'Sales' }) %>
-					<%- include("progetGeneral/src/components/footer/footer__column-items.ejs", { title: 'Brands' }) %>
+		<% [
+		{title: 'Blog'
+		},
+		{title: 'Trending now'
+		},
+		{title: 'Sales'
+		},
+		{title: 'Brands'
+		},
+		].forEach((item, index) => {%>
+			<%- include("progetGeneral/src/components/footer/footer__column-items.ejs", {
+				title:item.title
+			}) %>
+			<%});%>
 	</ul>
 </div>
